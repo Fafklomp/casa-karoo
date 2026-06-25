@@ -62,6 +62,44 @@ const steps = [
   },
 ]
 
+const reasons = [
+  {
+    number: '01',
+    title: 'Better Photos',
+    description:
+      'Listings with professionally styled spaces get significantly more clicks. Great design gives photographers something to work with.',
+  },
+  {
+    number: '02',
+    title: 'Higher Nightly Rates',
+    description:
+      'A well-designed space commands a premium. Guests pay more for spaces that feel intentional, comfortable, and distinctive.',
+  },
+  {
+    number: '03',
+    title: 'Stronger Reviews',
+    description:
+      'Guests notice the details. Thoughtful design leads to 5-star reviews that compound into more bookings over time.',
+  },
+  {
+    number: '04',
+    title: 'Faster Bookings',
+    description:
+      'A listing that stands out in search gets booked faster, reducing vacancy and maximising your return.',
+  },
+]
+
+function PH({ children }) {
+  return (
+    <span className="relative inline-block">
+      <svg aria-hidden="true" className="absolute inset-0 w-full h-full" viewBox="0 0 120 24" preserveAspectRatio="none" style={{ top: '10%', height: '85%' }}>
+        <path d="M2,18 C10,8 20,4 40,6 C60,8 80,5 100,7 C112,8 118,12 118,16 C118,20 110,22 90,21 C70,20 40,21 20,20 C8,19 2,21 2,18 Z" fill="#fdbf69" opacity="0.7"/>
+      </svg>
+      <span className="relative">{children}</span>
+    </span>
+  )
+}
+
 export default function ServicesPage() {
   return (
     <PageTransition>
@@ -85,26 +123,21 @@ export default function ServicesPage() {
                 key={number}
                 className="relative border border-sage/30 rounded-sm p-8 pt-10 overflow-hidden"
               >
-                {/* Background number */}
                 <span
                   className="absolute top-2 right-4 text-[5rem] leading-none text-stone/5 select-none pointer-events-none"
                   style={{ fontFamily: 'Poppins, sans-serif', fontWeight: 900 }}
                 >
                   {number}
                 </span>
-
-                {/* Gold number */}
                 <p className="text-xs tracking-[0.2em] uppercase font-semibold mb-4" style={{ color: '#fdbf69' }}>
                   {number}
                 </p>
-
                 <h2
                   className="text-2xl font-light leading-snug mb-4"
                   style={{ fontFamily: 'var(--font-display)', fontStyle: 'italic', color: '#2d2e8c' }}
                 >
                   {title}
                 </h2>
-
                 <p className="text-xs md:text-sm font-light leading-relaxed text-stone/70">
                   {description}
                 </p>
@@ -146,7 +179,6 @@ export default function ServicesPage() {
                     <p className="text-xs tracking-[0.2em] uppercase text-sage font-semibold">{number}</p>
                   </div>
                 </div>
-
                 <div className="pt-1">
                   <h3
                     className="text-2xl md:text-3xl font-light leading-snug mb-3"
@@ -160,6 +192,47 @@ export default function ServicesPage() {
                 </div>
               </div>
             ))}
+          </div>
+
+          {/* Why It Works */}
+          <div className="mt-24 mb-16">
+            <p className="text-xs tracking-[0.2em] uppercase text-sage font-semibold mb-4">The Case for Design</p>
+            <h2
+              className="text-3xl md:text-5xl font-light leading-tight max-w-2xl"
+              style={{ fontFamily: 'var(--font-display)', fontStyle: 'italic', color: '#2d2e8c' }}
+            >
+              Why it works
+            </h2>
+            <p className="mt-4 text-xl md:text-2xl font-light leading-snug text-stone/60 max-w-2xl"
+              style={{ fontFamily: 'var(--font-display)', fontStyle: 'italic' }}
+            >
+              Design is your highest-ROI investment as a host.
+            </p>
+          </div>
+
+          <div className="grid md:grid-cols-2 gap-8 mb-16">
+            {reasons.map(({ number, title, description }) => (
+              <div key={number} className="relative pt-8 pb-4">
+                <span
+                  className="absolute top-0 left-0 text-[5rem] sm:text-[8rem] leading-none text-stone/5 select-none pointer-events-none"
+                  style={{ fontFamily: 'Poppins, sans-serif', fontWeight: 900 }}
+                >
+                  {number}
+                </span>
+                <div className="relative z-10 pt-6">
+                  <p className="text-xs tracking-[0.2em] uppercase text-sage font-semibold mb-3">{title}</p>
+                  <p className="text-xs md:text-sm font-light leading-relaxed text-stone/70">
+                    {description}
+                  </p>
+                </div>
+              </div>
+            ))}
+          </div>
+
+          <div className="border-t border-stone/10 pt-12">
+            <p className="text-sm md:text-base font-light leading-relaxed text-stone/70 max-w-2xl">
+              Most hosts <PH>underinvest</PH> in their space and <PH>overspend</PH> on promotions. We flip that equation.
+            </p>
           </div>
         </section>
       </FadeIn>

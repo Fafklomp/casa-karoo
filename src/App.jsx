@@ -3,7 +3,6 @@ import { AnimatePresence } from 'framer-motion'
 import Nav from './components/Nav'
 import HeroPage from './pages/HeroPage'
 import ServicesPage from './pages/ServicesPage'
-import WhyPage from './pages/WhyPage'
 import GalleryPage from './pages/GalleryPage'
 import AboutPage from './pages/AboutPage'
 import ContactPage from './pages/ContactPage'
@@ -16,7 +15,6 @@ function AnimatedRoutes() {
       <Routes location={location} key={location.pathname}>
         <Route path="/"             element={<HeroPage />} />
         <Route path="/services"     element={<ServicesPage />} />
-        <Route path="/why"          element={<WhyPage />} />
         <Route path="/gallery"      element={<GalleryPage />} />
         <Route path="/about"        element={<AboutPage />} />
         <Route path="/contact"      element={<ContactPage />} />
