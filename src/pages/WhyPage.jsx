@@ -48,7 +48,7 @@ export default function WhyPage() {
           <div className="mb-16">
             <p className="text-xs tracking-[0.2em] uppercase text-sage font-semibold mb-4">The Case for Design</p>
             <h1
-              className="text-4xl md:text-6xl font-light leading-tight max-w-2xl"
+              className="text-3xl md:text-5xl font-light leading-tight max-w-2xl"
               style={{ fontFamily: 'var(--font-display)', fontStyle: 'italic', color: '#2d2e8c' }}
             >
               Design is your highest-ROI investment as a host.

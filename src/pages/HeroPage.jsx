@@ -20,7 +20,7 @@ export default function HeroPage() {
               Interior Design for Short-Term Rentals
             </p>
             <h1
-              className="text-5xl md:text-7xl font-light leading-[1.1] mb-8"
+              className="text-4xl md:text-6xl font-light leading-[1.1] mb-8"
               style={{ fontFamily: 'var(--font-display)', fontStyle: 'italic', color: '#2d2e8c' }}
             >
               Turn your rental into a standout listing.

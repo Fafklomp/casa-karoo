@@ -38,7 +38,7 @@ export default function ContactPage() {
           <div className="mb-12">
             <p className="text-xs tracking-[0.2em] uppercase text-sage font-semibold mb-2">Let's Talk</p>
             <h1
-              className="text-4xl md:text-5xl font-light leading-tight"
+              className="text-3xl md:text-4xl font-light leading-tight"
               style={{ fontFamily: 'var(--font-display)', color: '#2d2e8c', fontStyle: 'italic' }}
             >
               Start a project

@@ -5,7 +5,6 @@ import HeroPage from './pages/HeroPage'
 import ServicesPage from './pages/ServicesPage'
 import WhyPage from './pages/WhyPage'
 import GalleryPage from './pages/GalleryPage'
-import HowItWorksPage from './pages/HowItWorksPage'
 import ContactPage from './pages/ContactPage'
 import Footer from './components/Footer'
 
@@ -18,7 +17,6 @@ function AnimatedRoutes() {
         <Route path="/services"     element={<ServicesPage />} />
         <Route path="/why"          element={<WhyPage />} />
         <Route path="/gallery"      element={<GalleryPage />} />
-        <Route path="/how-it-works" element={<HowItWorksPage />} />
         <Route path="/contact"      element={<ContactPage />} />
       </Routes>
     </AnimatePresence>

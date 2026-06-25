@@ -116,7 +116,7 @@ export default function GalleryPage() {
           <div className="px-6 md:px-16 pt-16 pb-8 max-w-5xl mx-auto">
             <p className="text-xs tracking-[0.2em] uppercase text-sage font-semibold mb-4">Portfolio</p>
             <h1
-              className="text-4xl md:text-6xl font-light leading-tight"
+              className="text-3xl md:text-5xl font-light leading-tight"
               style={{ fontFamily: 'var(--font-display)', fontStyle: 'italic', color: '#2d2e8c' }}
             >
               Our Work

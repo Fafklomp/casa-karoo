@@ -3,12 +3,11 @@ import { NavLink, Link, useLocation } from 'react-router-dom'
 import { motion, AnimatePresence } from 'framer-motion'
 
 const navLinks = [
-  { label: 'Home',         to: '/'             },
-  { label: 'Services',     to: '/services'     },
-  { label: 'Why It Works', to: '/why'          },
-  { label: 'Gallery',      to: '/gallery'      },
-  { label: 'How It Works', to: '/how-it-works' },
-  { label: 'Contact',      to: '/contact'      },
+  { label: 'Home',         to: '/'         },
+  { label: 'Services',     to: '/services' },
+  { label: 'Why It Works', to: '/why'      },
+  { label: 'Gallery',      to: '/gallery'  },
+  { label: 'Contact',      to: '/contact'  },
 ]
 
 export default function Nav() {
