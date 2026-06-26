@@ -103,28 +103,22 @@ export default function ServicesPage() {
 
           {/* Service cards */}
           <div className="grid md:grid-cols-2 gap-6">
-            {services.map(({ number, title, description }) => (
-              <div
-                key={number}
-                className="relative border-2 rounded-sm p-8 pt-10 overflow-hidden" style={{ borderColor: '#8A9EBA' }}
-              >
-                <span
-                  className="absolute top-2 right-4 leading-none text-stone/5 select-none pointer-events-none"
-                  style={{ fontFamily: 'Inter, system-ui, sans-serif', fontWeight: 900, fontSize: '5rem' }}
-                >
-                  {number}
-                </span>
-                <h2
-                  className="text-2xl font-light leading-snug mb-4"
-                  style={{ fontFamily: 'var(--font-display)', fontStyle: 'italic', color: '#3D2B1A' }}
-                >
-                  {title}
-                </h2>
-                <p className="text-xs md:text-sm font-light leading-relaxed text-stone/70">
-                  {description}
-                </p>
-              </div>
-            ))}
+            <div className="relative border-2 rounded-sm p-8 pt-10 overflow-hidden" style={{ borderColor: '#8A9EBA' }}>
+              <h2 className="text-2xl font-light leading-snug mb-4" style={{ fontFamily: 'var(--font-display)', fontStyle: 'italic', color: '#3D2B1A' }}>
+                Design Consultation
+              </h2>
+              <p className="text-xs md:text-sm font-light leading-relaxed text-stone/70">
+                A focused session to define your space's <PH>style direction</PH>, <PH>colour palette</PH>, and <PH>furniture layout</PH>. Perfect for hosts who want a clear plan to execute themselves.
+              </p>
+            </div>
+            <div className="relative border-2 rounded-sm p-8 pt-10 overflow-hidden" style={{ borderColor: '#8A9EBA' }}>
+              <h2 className="text-2xl font-light leading-snug mb-4" style={{ fontFamily: 'var(--font-display)', fontStyle: 'italic', color: '#3D2B1A' }}>
+                Full Design Package
+              </h2>
+              <p className="text-xs md:text-sm font-light leading-relaxed text-stone/70">
+                <PH>End-to-end</PH> sourcing, procurement, and installation of all furniture, lighting, textiles, and accessories. We handle everything from <PH>first sketch to final arrangement</PH>.
+              </p>
+            </div>
           </div>
 
           {/* Custom note */}
@@ -137,7 +131,8 @@ export default function ServicesPage() {
           </p>
 
           {/* How It Works */}
-          <div className="mt-24 mb-16">
+          <div className="border-t border-stone/10 mt-24" />
+          <div className="mt-16 mb-16">
             <p className="text-xs tracking-[0.2em] uppercase text-sage font-semibold mb-4">The Process</p>
             <h2
               className="text-2xl md:text-4xl font-light leading-tight"
@@ -177,7 +172,8 @@ export default function ServicesPage() {
           </div>
 
           {/* Why It Works */}
-          <div className="mt-24 mb-16">
+          <div className="border-t border-stone/10 mt-24" />
+          <div className="mt-16 mb-16">
             <p className="text-xs tracking-[0.2em] uppercase text-sage font-semibold mb-4">The Case for Design</p>
             <h2
               className="text-2xl md:text-4xl font-light leading-tight max-w-2xl"
@@ -193,19 +189,35 @@ export default function ServicesPage() {
           </div>
 
           <div className="grid md:grid-cols-2 gap-8 mb-16">
-            {reasons.map(({ number, title, description }) => (
-              <div key={number} className="pb-4">
-                <p className="text-xs tracking-[0.2em] uppercase text-sage font-semibold mb-3">{title}</p>
-                <p className="text-xs md:text-sm font-light leading-relaxed text-stone/70">
-                  {description}
-                </p>
-              </div>
-            ))}
+            <div className="pb-4">
+              <p className="text-xs tracking-[0.2em] uppercase text-sage font-semibold mb-3">Better Photos</p>
+              <p className="text-xs md:text-sm font-light leading-relaxed text-stone/70">
+                Listings with <PH>professionally styled spaces</PH> get significantly more clicks. Great design gives photographers something to work with.
+              </p>
+            </div>
+            <div className="pb-4">
+              <p className="text-xs tracking-[0.2em] uppercase text-sage font-semibold mb-3">Higher Nightly Rates</p>
+              <p className="text-xs md:text-sm font-light leading-relaxed text-stone/70">
+                A well-designed space <PH>commands a premium</PH>. Guests pay more for spaces that feel intentional, comfortable, and distinctive.
+              </p>
+            </div>
+            <div className="pb-4">
+              <p className="text-xs tracking-[0.2em] uppercase text-sage font-semibold mb-3">Stronger Reviews</p>
+              <p className="text-xs md:text-sm font-light leading-relaxed text-stone/70">
+                Guests notice the details. Thoughtful design leads to <PH>5-star reviews</PH> that compound into more bookings over time.
+              </p>
+            </div>
+            <div className="pb-4">
+              <p className="text-xs tracking-[0.2em] uppercase text-sage font-semibold mb-3">Faster Bookings</p>
+              <p className="text-xs md:text-sm font-light leading-relaxed text-stone/70">
+                A listing that <PH>stands out in search</PH> gets booked faster, reducing vacancy and maximising your return.
+              </p>
+            </div>
           </div>
 
           <div className="border-t border-stone/10 pt-12">
-            <p className="text-sm md:text-sm font-light leading-relaxed text-stone/70 max-w-2xl">
-              Most hosts <PHB>underinvest</PHB> in their space and <PHB>overspend</PHB> on promotions. We flip that equation.
+            <p className="text-sm md:text-sm font-light leading-relaxed max-w-2xl" style={{ color: '#8A9EBA' }}>
+              Most hosts underinvest in their space and overspend on promotions. We flip that equation.
             </p>
           </div>
         </section>

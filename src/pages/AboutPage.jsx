@@ -21,11 +21,33 @@ export default function AboutPage() {
           <div className="grid md:grid-cols-[200px_1fr] gap-8 md:gap-16 items-start mb-16">
             <p className="text-xs tracking-[0.2em] uppercase text-sage font-semibold pt-1">Our Story</p>
             <div className="space-y-4">
-              <p className="text-sm md:text-sm font-light leading-relaxed text-stone/80">
+              <p className="text-sm font-light leading-relaxed text-stone/80">
                 Casa Karoo was born from a love of thoughtful spaces, grounded living, and the quiet beauty of the South African Karoo. Inspired by its vast landscapes, earthy palette, and sense of stillness, we create interiors that feel calm, intentional, and deeply connected to place.
               </p>
-              <p className="text-sm md:text-sm font-light leading-relaxed text-stone/80">
+              <p className="text-sm font-light leading-relaxed text-stone/80">
                 We believe that every space tells a story. One that balances beauty with function and leaves a lasting impression. From short-term rentals to hospitality and residential interiors, we transform spaces into meaningful experiences where people feel at home, wherever they are.
+              </p>
+            </div>
+          </div>
+
+          {/* Founder */}
+          <div className="grid md:grid-cols-[200px_1fr] gap-8 md:gap-16 items-start border-t border-stone/10 pt-12 mb-16">
+            <p className="text-xs tracking-[0.2em] uppercase text-sage font-semibold pt-1">The Founder</p>
+            <div className="space-y-4">
+              <p className="text-sm font-light leading-relaxed text-stone/80">
+                Hi, I'm Jules!
+              </p>
+              <p className="text-sm font-light leading-relaxed text-stone/80">
+                As an Interior Architect, I've always believed that the spaces we inhabit shape how we feel, connect and experience the world. My career has taken me from designing luxury hospitality projects and private residences to working across diverse environments, each reinforcing the importance of thoughtful, human-centred design.
+              </p>
+              <p className="text-sm font-light leading-relaxed text-stone/80">
+                Casa Karoo was born from a desire to create spaces that feel grounded, welcoming, and deeply connected to place. Inspired by the vast landscapes and quiet beauty of the South African Karoo, the studio embraces simplicity, natural materials, and timeless design to create interiors that evoke a sense of calm.
+              </p>
+              <p className="text-sm font-light leading-relaxed text-stone/80">
+                I believe that great design is more than creating beautiful spaces. It's about creating meaningful experiences. Whether it's a short-term rental that guests remember long after they've left, a boutique hospitality space with its own unique story, or a home that feels effortlessly lived in, every project is approached with intention, care and attention to detail.
+              </p>
+              <p className="text-sm font-light leading-relaxed text-stone/80">
+                At Casa Karoo, every space is thoughtfully curated to balance beauty with function, creating environments that are authentic, memorable and designed to be lived in.
               </p>
             </div>
           </div>
