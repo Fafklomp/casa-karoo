@@ -1,6 +1,7 @@
 import { Link } from 'react-router-dom'
 import PageTransition from '../components/PageTransition'
 import FadeIn from '../components/FadeIn'
+import WorldMap from '../components/WorldMap'
 
 const stats = [
   { value: '5★', label: 'Reviews' },
@@ -68,6 +69,9 @@ export default function HeroPage() {
             ))}
           </div>
         </section>
+
+        {/* World map */}
+        <WorldMap />
 
         {/* Spacer before footer */}
         <div className="pb-12" />
