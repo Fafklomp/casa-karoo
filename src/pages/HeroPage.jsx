@@ -12,8 +12,13 @@ export default function HeroPage() {
   return (
     <PageTransition>
       <FadeIn>
+        {/* Cover photo */}
+        <div className="w-full h-[35vh] md:h-[42vh] overflow-hidden">
+          <img src="/cover.jpg" alt="The Karoo" className="w-full h-full object-cover" style={{ objectPosition: 'center 60%' }} />
+        </div>
+
         {/* Hero */}
-        <section className="min-h-screen flex flex-col justify-center px-6 md:px-16 pt-20 pb-16 max-w-5xl mx-auto">
+        <section className="flex flex-col justify-center px-6 md:px-16 pt-16 pb-16 max-w-5xl mx-auto">
           <div className="max-w-3xl">
             <p className="text-xs tracking-[0.2em] uppercase text-sage font-semibold mb-6">
               Interior Design for Short-Term Rentals
