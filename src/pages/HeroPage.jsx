@@ -12,24 +12,27 @@ export default function HeroPage() {
   return (
     <PageTransition>
       <FadeIn>
-        {/* Cover photo */}
-        <div className="w-full h-[35vh] md:h-[42vh] overflow-hidden">
+        {/* Cover photo with heading overlay */}
+        <div className="relative w-full h-[35vh] md:h-[42vh] overflow-hidden">
           <img src="/cover.jpg" alt="The Karoo" className="w-full h-full object-cover" style={{ objectPosition: 'center 60%' }} />
-        </div>
-
-        {/* Hero */}
-        <section className="flex flex-col justify-center px-6 md:px-16 pt-16 pb-16 max-w-5xl mx-auto">
-          <div className="max-w-3xl">
-            <p className="text-xs tracking-[0.2em] uppercase text-sage font-semibold mb-6">
-              Interior Design for Short-Term Rentals
-            </p>
+          <div className="absolute inset-0 bg-black/20" />
+          <div className="absolute top-0 left-0 right-0 flex justify-center px-6 md:px-16 pt-20">
             <h1
-              className="text-4xl md:text-6xl font-light leading-[1.1] mb-8"
-              style={{ fontFamily: 'var(--font-display)', fontStyle: 'italic', color: '#3D2B1A' }}
+              className="text-3xl md:text-5xl font-light leading-[1.1]"
+              style={{ fontFamily: 'var(--font-display)', fontStyle: 'italic', color: '#fff' }}
             >
               Interiors that turn a rental into a retreat.
             </h1>
-            <p className="text-sm md:text-base font-light leading-relaxed text-stone/70 mb-10 max-w-xl">
+          </div>
+        </div>
+
+        {/* Hero */}
+        <section className="flex flex-col justify-center px-6 md:px-16 pt-10 pb-16 max-w-5xl mx-auto">
+          <div className="max-w-3xl">
+            <p className="text-xs tracking-[0.2em] uppercase text-sage font-semibold mb-4">
+              Interior Design for Short-Term Rentals
+            </p>
+            <p className="text-sm md:text-sm font-light leading-relaxed text-stone/70 mb-10 max-w-xl">
               Interior design & furnishing packages built for rental hosts who want better photos, stronger reviews & higher nightly rates.
             </p>
             <div className="flex flex-wrap gap-4">

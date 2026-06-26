@@ -90,14 +90,11 @@ const reasons = [
 ]
 
 function PH({ children }) {
-  return (
-    <span className="relative inline-block">
-      <svg aria-hidden="true" className="absolute inset-0 w-full h-full" viewBox="0 0 120 24" preserveAspectRatio="none" style={{ top: '10%', height: '85%' }}>
-        <path d="M2,18 C10,8 20,4 40,6 C60,8 80,5 100,7 C112,8 118,12 118,16 C118,20 110,22 90,21 C70,20 40,21 20,20 C8,19 2,21 2,18 Z" fill="#C4A882" opacity="0.7"/>
-      </svg>
-      <span className="relative">{children}</span>
-    </span>
-  )
+  return <span style={{ borderBottom: '2px solid #8A9EBA', paddingBottom: '1px' }}>{children}</span>
+}
+
+function PHB({ children }) {
+  return <span style={{ borderBottom: '2px solid #8A9EBA', paddingBottom: '1px' }}>{children}</span>
 }
 
 export default function ServicesPage() {
@@ -109,7 +106,7 @@ export default function ServicesPage() {
           <div className="mb-16">
             <p className="text-xs tracking-[0.2em] uppercase text-sage font-semibold mb-4">What We Offer</p>
             <h1
-              className="text-3xl md:text-5xl font-light leading-tight"
+              className="text-2xl md:text-4xl font-light leading-tight"
               style={{ fontFamily: 'var(--font-display)', fontStyle: 'italic', color: '#3D2B1A' }}
             >
               Services
@@ -121,7 +118,7 @@ export default function ServicesPage() {
             {services.map(({ number, title, description }) => (
               <div
                 key={number}
-                className="relative border border-sage/30 rounded-sm p-8 pt-10 overflow-hidden"
+                className="relative border rounded-sm p-8 pt-10 overflow-hidden" style={{ borderColor: '#8A9EBA' }}
               >
                 <span
                   className="absolute top-2 right-4 text-[5rem] leading-none text-stone/5 select-none pointer-events-none"
@@ -129,9 +126,6 @@ export default function ServicesPage() {
                 >
                   {number}
                 </span>
-                <p className="text-xs tracking-[0.2em] uppercase font-semibold mb-4" style={{ color: '#C4A882' }}>
-                  {number}
-                </p>
                 <h2
                   className="text-2xl font-light leading-snug mb-4"
                   style={{ fontFamily: 'var(--font-display)', fontStyle: 'italic', color: '#3D2B1A' }}
@@ -158,7 +152,7 @@ export default function ServicesPage() {
           <div className="mt-24 mb-16">
             <p className="text-xs tracking-[0.2em] uppercase text-sage font-semibold mb-4">The Process</p>
             <h2
-              className="text-3xl md:text-5xl font-light leading-tight"
+              className="text-2xl md:text-4xl font-light leading-tight"
               style={{ fontFamily: 'var(--font-display)', fontStyle: 'italic', color: '#3D2B1A' }}
             >
               How it works
@@ -181,7 +175,7 @@ export default function ServicesPage() {
                 </div>
                 <div className="pt-1">
                   <h3
-                    className="text-2xl md:text-3xl font-light leading-snug mb-3"
+                    className="text-2xl md:text-2xl font-light leading-snug mb-3"
                     style={{ fontFamily: 'var(--font-display)', fontStyle: 'italic', color: '#3D2B1A' }}
                   >
                     {title}
@@ -198,7 +192,7 @@ export default function ServicesPage() {
           <div className="mt-24 mb-16">
             <p className="text-xs tracking-[0.2em] uppercase text-sage font-semibold mb-4">The Case for Design</p>
             <h2
-              className="text-3xl md:text-5xl font-light leading-tight max-w-2xl"
+              className="text-2xl md:text-4xl font-light leading-tight max-w-2xl"
               style={{ fontFamily: 'var(--font-display)', fontStyle: 'italic', color: '#3D2B1A' }}
             >
               Why it works
@@ -212,26 +206,18 @@ export default function ServicesPage() {
 
           <div className="grid md:grid-cols-2 gap-8 mb-16">
             {reasons.map(({ number, title, description }) => (
-              <div key={number} className="relative pt-8 pb-4">
-                <span
-                  className="absolute top-0 left-0 text-[5rem] sm:text-[8rem] leading-none text-stone/5 select-none pointer-events-none"
-                  style={{ fontFamily: 'Inter, system-ui, sans-serif', fontWeight: 900 }}
-                >
-                  {number}
-                </span>
-                <div className="relative z-10 pt-6">
-                  <p className="text-xs tracking-[0.2em] uppercase text-sage font-semibold mb-3">{title}</p>
-                  <p className="text-xs md:text-sm font-light leading-relaxed text-stone/70">
-                    {description}
-                  </p>
-                </div>
+              <div key={number} className="pb-4">
+                <p className="text-xs tracking-[0.2em] uppercase text-sage font-semibold mb-3">{title}</p>
+                <p className="text-xs md:text-sm font-light leading-relaxed text-stone/70">
+                  {description}
+                </p>
               </div>
             ))}
           </div>
 
           <div className="border-t border-stone/10 pt-12">
-            <p className="text-sm md:text-base font-light leading-relaxed text-stone/70 max-w-2xl">
-              Most hosts <PH>underinvest</PH> in their space and <PH>overspend</PH> on promotions. We flip that equation.
+            <p className="text-sm md:text-sm font-light leading-relaxed text-stone/70 max-w-2xl">
+              Most hosts <PHB>underinvest</PHB> in their space and <PHB>overspend</PHB> on promotions. We flip that equation.
             </p>
           </div>
         </section>

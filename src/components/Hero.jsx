@@ -1,14 +1,7 @@
 import photo from '../assets/photo.jpg'
 
 function PH({ children }) {
-  return (
-    <span className="relative inline-block">
-      <svg aria-hidden="true" className="absolute inset-0 w-full h-full" viewBox="0 0 120 24" preserveAspectRatio="none" style={{ top: '10%', height: '85%' }}>
-        <path d="M2,18 C10,8 20,4 40,6 C60,8 80,5 100,7 C112,8 118,12 118,16 C118,20 110,22 90,21 C70,20 40,21 20,20 C8,19 2,21 2,18 Z" fill="#8A9EBA" opacity="0.35"/>
-      </svg>
-      <span className="relative">{children}</span>
-    </span>
-  )
+  return <span style={{ borderBottom: '2px solid #8A9EBA', paddingBottom: '1px' }}>{children}</span>
 }
 
 export default function Hero() {
@@ -21,7 +14,7 @@ export default function Hero() {
         </div>
         <div>
           <h1
-            className="text-4xl font-light leading-tight mb-2"
+            className="text-3xl font-light leading-tight mb-2"
             style={{ fontFamily: 'var(--font-display)', color: '#3D2B1A', fontStyle: 'italic' }}
           >
             Jules Tucker
@@ -48,7 +41,7 @@ export default function Hero() {
         <div className="flex flex-col justify-start space-y-6">
           <div>
             <h1
-              className="text-7xl font-light leading-tight mb-3"
+              className="text-6xl font-light leading-tight mb-3"
               style={{ fontFamily: 'var(--font-display)', color: '#3D2B1A', fontStyle: 'italic' }}
             >
               Jules Tucker

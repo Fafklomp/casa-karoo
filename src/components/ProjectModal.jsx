@@ -200,13 +200,13 @@ export default function ProjectModal({ project, onClose }) {
           </p>
 
           <h3
-            className="text-4xl md:text-5xl font-light leading-tight mb-1"
+            className="text-3xl md:text-4xl font-light leading-tight mb-1"
             style={{ fontFamily: 'var(--font-display)', color: '#3D2B1A', fontStyle: 'italic' }}
           >
             {project.name}
           </h3>
           {project.subtitle && (
-            <p className="text-base font-light text-stone/50 mb-1">{project.subtitle}</p>
+            <p className="text-sm font-light text-stone/50 mb-1">{project.subtitle}</p>
           )}
           <p className="text-sm text-stone/50 mb-3">{project.location}</p>
           {project.id === 1 && (

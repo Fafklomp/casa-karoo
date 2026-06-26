@@ -17,7 +17,7 @@ export default function Links() {
       <div className="mb-12">
         <p className="text-xs tracking-[0.2em] uppercase text-sage font-semibold mb-2">Connect</p>
         <h2
-          className="text-4xl md:text-5xl font-light leading-tight"
+          className="text-3xl md:text-4xl font-light leading-tight"
           style={{ fontFamily: 'var(--font-display)', color: '#3D2B1A', fontStyle: 'italic' }}
         >
           Links
@@ -35,7 +35,7 @@ export default function Links() {
             >
               <div className="flex items-center gap-4">
                 <span
-                  className="text-2xl md:text-3xl font-light group-hover:text-terra transition-colors duration-200"
+                  className="text-2xl md:text-2xl font-light group-hover:text-terra transition-colors duration-200"
                   style={{ fontFamily: 'var(--font-display)' }}
                 >
                   {label}

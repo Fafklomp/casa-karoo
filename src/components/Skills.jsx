@@ -47,7 +47,7 @@ export default function Skills() {
       <div className="mb-12">
         <p className="text-xs tracking-[0.2em] uppercase text-sage font-semibold mb-2">Expertise</p>
         <h2
-          className="text-4xl md:text-5xl font-light leading-tight"
+          className="text-3xl md:text-4xl font-light leading-tight"
           style={{ fontFamily: 'var(--font-display)', color: '#3D2B1A', fontStyle: 'italic' }}
         >
           Skills
