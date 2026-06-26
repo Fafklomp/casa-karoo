@@ -2,8 +2,8 @@ import { SiInstagram } from 'react-icons/si'
 import { MdEmail } from 'react-icons/md'
 
 const socials = [
-  { icon: SiInstagram, href: 'https://www.instagram.com/casakaroo/', label: 'Instagram' },
-  { icon: MdEmail,     href: 'mailto:juliaktucker@gmail.com',          label: 'Email'     },
+  { icon: SiInstagram, href: 'https://www.instagram.com/casakaroo/', label: '@casakaroo' },
+  { icon: MdEmail,     href: 'mailto:juliaktucker@gmail.com',          label: 'juliaktucker@gmail.com' },
 ]
 
 export default function Footer() {
@@ -14,7 +14,7 @@ export default function Footer() {
         <p className="text-xs text-stone/30 tracking-wide">
           © {year} Casa Karoo. All rights reserved.
         </p>
-        <div className="flex items-center gap-10">
+        <div className="flex items-center gap-8">
           {socials.map(({ icon: Icon, href, label }) => (
             <a
               key={label}
@@ -22,9 +22,9 @@ export default function Footer() {
               target={href.startsWith('mailto') ? undefined : '_blank'}
               rel="noopener noreferrer"
               aria-label={label}
-              className="text-[#8A9EBA] hover:opacity-70 transition-opacity duration-200"
+              className="hover:opacity-70 transition-opacity duration-200"
             >
-              <Icon size={28} />
+              <Icon size={22} style={{ color: '#8A9EBA' }} />
             </a>
           ))}
         </div>
