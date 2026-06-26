@@ -11,21 +11,9 @@ const services = [
   },
   {
     number: '02',
-    title: 'Full Furnishing Package',
+    title: 'Full Design Package',
     description:
       'End-to-end sourcing, procurement, and installation of all furniture, lighting, textiles, and accessories. We handle everything from first sketch to final arrangement.',
-  },
-  {
-    number: '03',
-    title: 'Styling & Staging',
-    description:
-      'A final-touch service to style your space for photography and guest arrival. Cushions, artwork, plants, tableware — the details that make guests say wow.',
-  },
-  {
-    number: '04',
-    title: 'Photography-Ready Setup',
-    description:
-      'We prepare your space specifically for listing photography: optimising layout, lighting, and styling so every shot earns its place on your listing.',
   },
 ]
 
@@ -118,11 +106,11 @@ export default function ServicesPage() {
             {services.map(({ number, title, description }) => (
               <div
                 key={number}
-                className="relative border rounded-sm p-8 pt-10 overflow-hidden" style={{ borderColor: '#8A9EBA' }}
+                className="relative border-2 rounded-sm p-8 pt-10 overflow-hidden" style={{ borderColor: '#8A9EBA' }}
               >
                 <span
-                  className="absolute top-2 right-4 text-[5rem] leading-none text-stone/5 select-none pointer-events-none"
-                  style={{ fontFamily: 'Inter, system-ui, sans-serif', fontWeight: 900 }}
+                  className="absolute top-2 right-4 leading-none text-stone/5 select-none pointer-events-none"
+                  style={{ fontFamily: 'Inter, system-ui, sans-serif', fontWeight: 900, fontSize: '5rem' }}
                 >
                   {number}
                 </span>
@@ -159,12 +147,12 @@ export default function ServicesPage() {
             </h2>
           </div>
 
-          <div className="space-y-12">
+          <div className="space-y-6">
             {steps.map(({ number, title, description }) => (
               <div key={number} className="grid md:grid-cols-[200px_1fr] gap-8 md:gap-16 items-start relative">
                 <div className="relative pt-2">
                   <span
-                    className="absolute top-0 left-0 text-[6rem] leading-none text-stone/5 select-none pointer-events-none"
+                    className="absolute top-0 left-0 text-[5rem] leading-none text-stone/5 select-none pointer-events-none"
                     style={{ fontFamily: 'Inter, system-ui, sans-serif', fontWeight: 900 }}
                   >
                     {number}
