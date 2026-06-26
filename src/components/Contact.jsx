@@ -39,17 +39,17 @@ export default function Contact() {
             I would love to connect and explore how my interior design background could fit your team.
           </p>
           <div className="flex items-center gap-3 mt-1">
-            <MdEmail size={22} style={{ color: '#C4A882' }} />
+            <MdEmail size={22} style={{ color: '#8A9EBA' }} />
             <a href="mailto:juliaktucker@gmail.com" className="text-sm text-stone/50 hover:text-stone transition-colors duration-200">juliaktucker@gmail.com</a>
           </div>
 
           <div className="flex items-center gap-3 mt-5">
-            <SiWhatsapp size={22} style={{ color: '#C4A882' }} />
+            <SiWhatsapp size={22} style={{ color: '#8A9EBA' }} />
             <a href="https://wa.me/27762319510" target="_blank" rel="noopener noreferrer" className="text-sm text-stone/50 hover:text-stone transition-colors duration-200">+27 76 231 9510</a>
           </div>
 
           <div className="flex items-center gap-3 mt-5">
-            <MdPhone size={22} style={{ color: '#C4A882' }} />
+            <MdPhone size={22} style={{ color: '#8A9EBA' }} />
             <a href="tel:+12063960583" className="text-sm text-stone/50 hover:text-stone transition-colors duration-200">+1 206 396 0583</a>
           </div>
         </div>

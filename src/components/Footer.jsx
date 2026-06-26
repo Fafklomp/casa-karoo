@@ -3,7 +3,7 @@ import { MdEmail } from 'react-icons/md'
 
 const socials = [
   { icon: SiInstagram, href: 'https://www.instagram.com/casakaroo/', label: 'Instagram' },
-  { icon: MdEmail,     href: 'mailto:juliaktucker@gmail.com',  label: 'Email'     },
+  { icon: MdEmail,     href: 'mailto:juliaktucker@gmail.com',          label: 'Email'     },
 ]
 
 export default function Footer() {
@@ -22,7 +22,7 @@ export default function Footer() {
               target={href.startsWith('mailto') ? undefined : '_blank'}
               rel="noopener noreferrer"
               aria-label={label}
-              className="text-[#C4A882] hover:opacity-70 transition-opacity duration-200"
+              className="text-[#8A9EBA] hover:opacity-70 transition-opacity duration-200"
             >
               <Icon size={28} />
             </a>

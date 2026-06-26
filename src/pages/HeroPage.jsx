@@ -13,12 +13,12 @@ export default function HeroPage() {
     <PageTransition>
       <FadeIn>
         {/* Cover photo with heading overlay */}
-        <div className="relative w-full h-[35vh] md:h-[42vh] overflow-hidden">
+        <div className="relative w-full h-[48vh] md:h-[56vh] overflow-hidden">
           <img src="/cover.jpg" alt="The Karoo" className="w-full h-full object-cover" style={{ objectPosition: 'center 60%' }} />
           <div className="absolute inset-0 bg-black/20" />
           <div className="absolute top-0 left-0 right-0 flex justify-center px-6 md:px-16 pt-20">
             <h1
-              className="text-3xl md:text-5xl font-light leading-[1.1]"
+              className="text-2xl md:text-4xl font-light leading-[1.1]"
               style={{ fontFamily: 'var(--font-display)', fontStyle: 'italic', color: '#fff' }}
             >
               Interiors that turn a rental into a retreat.

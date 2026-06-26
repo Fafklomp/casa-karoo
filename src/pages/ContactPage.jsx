@@ -51,7 +51,7 @@ export default function ContactPage() {
                 Tell us about your space and we'll get back to you within 48 hours.
               </p>
               <div className="flex items-center gap-3 mt-1">
-                <MdEmail size={22} style={{ color: '#C4A882' }} />
+                <MdEmail size={22} style={{ color: '#8A9EBA' }} />
                 <a
                   href="mailto:juliaktucker@gmail.com"
                   className="text-sm text-stone/50 hover:text-stone transition-colors duration-200"
@@ -60,7 +60,7 @@ export default function ContactPage() {
                 </a>
               </div>
               <div className="flex items-center gap-3 mt-5">
-                <MdPhone size={22} style={{ color: '#C4A882' }} />
+                <MdPhone size={22} style={{ color: '#8A9EBA' }} />
                 <a
                   href="tel:+12063960583"
                   className="text-sm text-stone/50 hover:text-stone transition-colors duration-200"
@@ -69,7 +69,7 @@ export default function ContactPage() {
                 </a>
               </div>
               <div className="flex items-center gap-3 mt-5">
-                <SiInstagram size={22} style={{ color: '#C4A882' }} />
+                <SiInstagram size={22} style={{ color: '#8A9EBA' }} />
                 <a
                   href="https://www.instagram.com/casakaroo/"
                   target="_blank"
