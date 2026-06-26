@@ -58,7 +58,7 @@ export default function ImageBanner({ speed = 40 }) {
       onTouchEnd={endDrag}
     >
       <div className="absolute bottom-7 right-3 z-10 pointer-events-none">
-        <span style={{ color: '#fdbf69', fontSize: '18px', lineHeight: 1 }}>↔</span>
+        <span style={{ color: '#C4A882', fontSize: '18px', lineHeight: 1 }}>↔</span>
       </div>
 
       <motion.div

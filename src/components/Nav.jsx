@@ -5,7 +5,7 @@ import { motion, AnimatePresence } from 'framer-motion'
 const navLinks = [
   { label: 'Home',         to: '/'         },
   { label: 'Services',     to: '/services' },
-  { label: 'About Us',     to: '/about'    },
+  { label: 'About',        to: '/about'    },
   { label: 'Gallery',      to: '/gallery'  },
   { label: 'Contact',      to: '/contact'  },
 ]
@@ -32,7 +32,7 @@ export default function Nav() {
     }`
 
   return (
-    <header className="fixed top-0 left-0 right-0 z-50" style={{ backgroundColor: '#F7F4EF' }}>
+    <header className="fixed top-0 left-0 right-0 z-50" style={{ backgroundColor: '#F5F0E8' }}>
       <nav className="max-w-5xl mx-auto px-6 md:px-16 h-14 flex items-center justify-between">
         <Link
           to="/"
@@ -85,7 +85,7 @@ export default function Nav() {
             animate={{ opacity: 1, y: 0, transition: { duration: 0.2 } }}
             exit={{ opacity: 0, y: -6, transition: { duration: 0.15 } }}
             className="md:hidden border-t border-stone/10 px-6 py-8"
-            style={{ backgroundColor: '#F7F4EF' }}
+            style={{ backgroundColor: '#F5F0E8' }}
           >
             <ul className="flex flex-col gap-6">
               {navLinks.map(({ label, to }) => (

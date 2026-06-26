@@ -27,7 +27,7 @@ export default function Contact() {
         <p className="text-xs tracking-[0.2em] uppercase text-sage font-semibold mb-2">Get in Touch</p>
         <h2
           className="text-4xl md:text-5xl font-light leading-tight"
-          style={{ fontFamily: 'var(--font-display)', color: '#2d2e8c', fontStyle: 'italic' }}
+          style={{ fontFamily: 'var(--font-display)', color: '#3D2B1A', fontStyle: 'italic' }}
         >
           Contact Me
         </h2>
@@ -39,17 +39,17 @@ export default function Contact() {
             I would love to connect and explore how my interior design background could fit your team.
           </p>
           <div className="flex items-center gap-3 mt-1">
-            <MdEmail size={22} style={{ color: '#fdbf69' }} />
+            <MdEmail size={22} style={{ color: '#C4A882' }} />
             <a href="mailto:juliaktucker@gmail.com" className="text-sm text-stone/50 hover:text-stone transition-colors duration-200">juliaktucker@gmail.com</a>
           </div>
 
           <div className="flex items-center gap-3 mt-5">
-            <SiWhatsapp size={22} style={{ color: '#fdbf69' }} />
+            <SiWhatsapp size={22} style={{ color: '#C4A882' }} />
             <a href="https://wa.me/27762319510" target="_blank" rel="noopener noreferrer" className="text-sm text-stone/50 hover:text-stone transition-colors duration-200">+27 76 231 9510</a>
           </div>
 
           <div className="flex items-center gap-3 mt-5">
-            <MdPhone size={22} style={{ color: '#fdbf69' }} />
+            <MdPhone size={22} style={{ color: '#C4A882' }} />
             <a href="tel:+12063960583" className="text-sm text-stone/50 hover:text-stone transition-colors duration-200">+1 206 396 0583</a>
           </div>
         </div>

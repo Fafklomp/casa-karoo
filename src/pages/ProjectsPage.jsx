@@ -76,7 +76,7 @@ export default function ProjectsPage() {
             <p className="text-xs tracking-[0.2em] uppercase text-sage font-semibold mb-2">Selected Work</p>
             <h1
               className="text-4xl md:text-6xl font-light leading-tight"
-              style={{ fontFamily: 'var(--font-display)', color: '#2d2e8c', fontStyle: 'italic' }}
+              style={{ fontFamily: 'var(--font-display)', color: '#3D2B1A', fontStyle: 'italic' }}
             >
               Projects
             </h1>

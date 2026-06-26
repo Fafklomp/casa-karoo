@@ -48,7 +48,7 @@ export default function Skills() {
         <p className="text-xs tracking-[0.2em] uppercase text-sage font-semibold mb-2">Expertise</p>
         <h2
           className="text-4xl md:text-5xl font-light leading-tight"
-          style={{ fontFamily: 'var(--font-display)', color: '#2d2e8c', fontStyle: 'italic' }}
+          style={{ fontFamily: 'var(--font-display)', color: '#3D2B1A', fontStyle: 'italic' }}
         >
           Skills
         </h2>
@@ -57,7 +57,7 @@ export default function Skills() {
       <div className="grid grid-cols-2 md:grid-cols-4 gap-10">
         {skillGroups.map(({ category, skills }) => (
           <div key={category}>
-            <p className="text-xs tracking-[0.15em] uppercase mb-4" style={{ color: '#2d2e8c' }}>{category}</p>
+            <p className="text-xs tracking-[0.15em] uppercase mb-4" style={{ color: '#3D2B1A' }}>{category}</p>
             <div className="flex flex-col gap-2">
               {skills.map(skill => {
                 const entry = skillIcons[skill]

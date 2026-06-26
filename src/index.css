@@ -1,11 +1,11 @@
 @import "tailwindcss";
 
 @theme {
-  --color-stone: #2C2822;
-  --color-offwhite: #F7F4EF;
-  --color-sage: #2d2e8c;
-  --color-terra: #2d2e8c;
-  --color-gold: #fdbf69;
+  --color-stone: #3D2B1A;
+  --color-offwhite: #F5F0E8;
+  --color-sage: #8C6E52;
+  --color-terra: #B8956A;
+  --color-gold: #C4A882;
 
   --font-display: 'Cormorant Garamond', Georgia, serif;
   --font-body: 'Poppins', system-ui, sans-serif;
@@ -21,8 +21,8 @@ html {
 
 body {
   margin: 0;
-  background-color: #F7F4EF;
-  color: #2C2822;
+  background-color: #F5F0E8;
+  color: #3D2B1A;
   font-family: 'Poppins', system-ui, sans-serif;
   font-weight: 300;
   font-size: 15px;
@@ -32,10 +32,10 @@ body {
 }
 
 li::marker {
-  color: #fdbf69;
+  color: #C4A882;
 }
 
 ::selection {
-  background-color: #2d2e8c22;
-  color: #2C2822;
+  background-color: #C4A88222;
+  color: #3D2B1A;
 }

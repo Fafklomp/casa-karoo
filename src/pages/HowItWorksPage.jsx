@@ -44,7 +44,7 @@ export default function HowItWorksPage() {
             <p className="text-xs tracking-[0.2em] uppercase text-sage font-semibold mb-4">The Process</p>
             <h1
               className="text-4xl md:text-6xl font-light leading-tight"
-              style={{ fontFamily: 'var(--font-display)', fontStyle: 'italic', color: '#2d2e8c' }}
+              style={{ fontFamily: 'var(--font-display)', fontStyle: 'italic', color: '#3D2B1A' }}
             >
               How it works
             </h1>
@@ -58,7 +58,7 @@ export default function HowItWorksPage() {
                 <div className="relative pt-2">
                   <span
                     className="absolute top-0 left-0 text-[6rem] leading-none text-stone/5 select-none pointer-events-none"
-                    style={{ fontFamily: 'Poppins, sans-serif', fontWeight: 900 }}
+                    style={{ fontFamily: 'Inter, system-ui, sans-serif', fontWeight: 900 }}
                   >
                     {number}
                   </span>
@@ -70,7 +70,7 @@ export default function HowItWorksPage() {
                 <div className="pt-1">
                   <h2
                     className="text-2xl md:text-3xl font-light leading-snug mb-3"
-                    style={{ fontFamily: 'var(--font-display)', fontStyle: 'italic', color: '#2d2e8c' }}
+                    style={{ fontFamily: 'var(--font-display)', fontStyle: 'italic', color: '#3D2B1A' }}
                   >
                     {title}
                   </h2>

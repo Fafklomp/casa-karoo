@@ -4,7 +4,7 @@ function PH({ children }) {
   return (
     <span className="relative inline-block">
       <svg aria-hidden="true" className="absolute inset-0 w-full h-full" viewBox="0 0 120 24" preserveAspectRatio="none" style={{ top: '10%', height: '85%' }}>
-        <path d="M2,18 C10,8 20,4 40,6 C60,8 80,5 100,7 C112,8 118,12 118,16 C118,20 110,22 90,21 C70,20 40,21 20,20 C8,19 2,21 2,18 Z" fill="#fdbf69" opacity="0.7"/>
+        <path d="M2,18 C10,8 20,4 40,6 C60,8 80,5 100,7 C112,8 118,12 118,16 C118,20 110,22 90,21 C70,20 40,21 20,20 C8,19 2,21 2,18 Z" fill="#C4A882" opacity="0.7"/>
       </svg>
       <span className="relative">{children}</span>
     </span>
@@ -22,7 +22,7 @@ export default function Hero() {
         <div>
           <h1
             className="text-4xl font-light leading-tight mb-2"
-            style={{ fontFamily: 'var(--font-display)', color: '#2d2e8c', fontStyle: 'italic' }}
+            style={{ fontFamily: 'var(--font-display)', color: '#3D2B1A', fontStyle: 'italic' }}
           >
             Jules Tucker
           </h1>
@@ -49,7 +49,7 @@ export default function Hero() {
           <div>
             <h1
               className="text-7xl font-light leading-tight mb-3"
-              style={{ fontFamily: 'var(--font-display)', color: '#2d2e8c', fontStyle: 'italic' }}
+              style={{ fontFamily: 'var(--font-display)', color: '#3D2B1A', fontStyle: 'italic' }}
             >
               Jules Tucker
             </h1>

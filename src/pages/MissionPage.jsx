@@ -5,7 +5,7 @@ function PH({ children }) {
   return (
     <span className="relative inline-block">
       <svg aria-hidden="true" className="absolute inset-0 w-full h-full" viewBox="0 0 120 24" preserveAspectRatio="none" style={{ top: '10%', height: '85%' }}>
-        <path d="M2,18 C10,8 20,4 40,6 C60,8 80,5 100,7 C112,8 118,12 118,16 C118,20 110,22 90,21 C70,20 40,21 20,20 C8,19 2,21 2,18 Z" fill="#fdbf69" opacity="0.7"/>
+        <path d="M2,18 C10,8 20,4 40,6 C60,8 80,5 100,7 C112,8 118,12 118,16 C118,20 110,22 90,21 C70,20 40,21 20,20 C8,19 2,21 2,18 Z" fill="#C4A882" opacity="0.7"/>
       </svg>
       <span className="relative">{children}</span>
     </span>
@@ -57,7 +57,7 @@ export default function MissionPage() {
                     <defs>
                       <path id={`arc-${label}`} d="M 22,80 A 58,58 0 1,1 138,80" />
                     </defs>
-                    <text fontSize="10" fontWeight="600" letterSpacing="2.5" fill="#2d2e8c" fontFamily="var(--font-display)" transform="rotate(-20, 80, 80)">
+                    <text fontSize="10" fontWeight="600" letterSpacing="2.5" fill="#3D2B1A" fontFamily="var(--font-display)" transform="rotate(-20, 80, 80)">
                       <textPath href={`#arc-${label}`} startOffset="50%" textAnchor="middle">
                         {label}
                       </textPath>
@@ -102,7 +102,7 @@ export default function MissionPage() {
               <div className="grid grid-cols-3 gap-4 md:gap-8">
                 {/* Self Awareness */}
                 <div className="relative pt-8 pb-4">
-                  <span className="absolute top-0 left-0 text-[3rem] sm:text-[8rem] leading-none text-stone/5 select-none" style={{ fontFamily: 'Poppins, sans-serif', fontWeight: 900 }}>01</span>
+                  <span className="absolute top-0 left-0 text-[3rem] sm:text-[8rem] leading-none text-stone/5 select-none" style={{ fontFamily: 'Inter, system-ui, sans-serif', fontWeight: 900 }}>01</span>
                   <div className="relative z-10 pt-6">
                     <p className="text-xs tracking-[0.15em] uppercase text-sage font-semibold mb-4 sm:-ml-4">Self Awareness</p>
                     <p className="text-[10px] tracking-widest uppercase text-stone/35 mb-1">Clifton Strengths</p>
@@ -113,7 +113,7 @@ export default function MissionPage() {
                 </div>
                 {/* Hobbies & Interests */}
                 <div className="relative pt-8 pb-4">
-                  <span className="absolute top-0 left-0 text-[3rem] sm:text-[8rem] leading-none text-stone/5 select-none" style={{ fontFamily: 'Poppins, sans-serif', fontWeight: 900 }}>02</span>
+                  <span className="absolute top-0 left-0 text-[3rem] sm:text-[8rem] leading-none text-stone/5 select-none" style={{ fontFamily: 'Inter, system-ui, sans-serif', fontWeight: 900 }}>02</span>
                   <div className="relative z-10 pt-6">
                     <p className="text-xs tracking-[0.15em] uppercase text-sage font-semibold mb-4 sm:-ml-4">Hobbies &amp; Interests</p>
                     <ul className="list-disc list-outside ml-4 space-y-1">
@@ -126,7 +126,7 @@ export default function MissionPage() {
                 </div>
                 {/* Values */}
                 <div className="relative pt-8 pb-4">
-                  <span className="absolute top-0 left-0 text-[3rem] sm:text-[8rem] leading-none text-stone/5 select-none" style={{ fontFamily: 'Poppins, sans-serif', fontWeight: 900 }}>03</span>
+                  <span className="absolute top-0 left-0 text-[3rem] sm:text-[8rem] leading-none text-stone/5 select-none" style={{ fontFamily: 'Inter, system-ui, sans-serif', fontWeight: 900 }}>03</span>
                   <div className="relative z-10 pt-6">
                     <p className="text-xs tracking-[0.15em] uppercase text-sage font-semibold mb-4 sm:-ml-4">Values</p>
                     <ul className="list-disc list-outside ml-4 space-y-1">

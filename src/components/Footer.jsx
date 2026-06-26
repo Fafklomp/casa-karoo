@@ -22,7 +22,7 @@ export default function Footer() {
               target={href.startsWith('mailto') ? undefined : '_blank'}
               rel="noopener noreferrer"
               aria-label={label}
-              className="text-[#fdbf69] hover:opacity-70 transition-opacity duration-200"
+              className="text-[#C4A882] hover:opacity-70 transition-opacity duration-200"
             >
               <Icon size={28} />
             </a>

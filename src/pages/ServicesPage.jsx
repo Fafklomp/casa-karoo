@@ -93,7 +93,7 @@ function PH({ children }) {
   return (
     <span className="relative inline-block">
       <svg aria-hidden="true" className="absolute inset-0 w-full h-full" viewBox="0 0 120 24" preserveAspectRatio="none" style={{ top: '10%', height: '85%' }}>
-        <path d="M2,18 C10,8 20,4 40,6 C60,8 80,5 100,7 C112,8 118,12 118,16 C118,20 110,22 90,21 C70,20 40,21 20,20 C8,19 2,21 2,18 Z" fill="#fdbf69" opacity="0.7"/>
+        <path d="M2,18 C10,8 20,4 40,6 C60,8 80,5 100,7 C112,8 118,12 118,16 C118,20 110,22 90,21 C70,20 40,21 20,20 C8,19 2,21 2,18 Z" fill="#C4A882" opacity="0.7"/>
       </svg>
       <span className="relative">{children}</span>
     </span>
@@ -110,7 +110,7 @@ export default function ServicesPage() {
             <p className="text-xs tracking-[0.2em] uppercase text-sage font-semibold mb-4">What We Offer</p>
             <h1
               className="text-3xl md:text-5xl font-light leading-tight"
-              style={{ fontFamily: 'var(--font-display)', fontStyle: 'italic', color: '#2d2e8c' }}
+              style={{ fontFamily: 'var(--font-display)', fontStyle: 'italic', color: '#3D2B1A' }}
             >
               Services
             </h1>
@@ -125,16 +125,16 @@ export default function ServicesPage() {
               >
                 <span
                   className="absolute top-2 right-4 text-[5rem] leading-none text-stone/5 select-none pointer-events-none"
-                  style={{ fontFamily: 'Poppins, sans-serif', fontWeight: 900 }}
+                  style={{ fontFamily: 'Inter, system-ui, sans-serif', fontWeight: 900 }}
                 >
                   {number}
                 </span>
-                <p className="text-xs tracking-[0.2em] uppercase font-semibold mb-4" style={{ color: '#fdbf69' }}>
+                <p className="text-xs tracking-[0.2em] uppercase font-semibold mb-4" style={{ color: '#C4A882' }}>
                   {number}
                 </p>
                 <h2
                   className="text-2xl font-light leading-snug mb-4"
-                  style={{ fontFamily: 'var(--font-display)', fontStyle: 'italic', color: '#2d2e8c' }}
+                  style={{ fontFamily: 'var(--font-display)', fontStyle: 'italic', color: '#3D2B1A' }}
                 >
                   {title}
                 </h2>
@@ -159,7 +159,7 @@ export default function ServicesPage() {
             <p className="text-xs tracking-[0.2em] uppercase text-sage font-semibold mb-4">The Process</p>
             <h2
               className="text-3xl md:text-5xl font-light leading-tight"
-              style={{ fontFamily: 'var(--font-display)', fontStyle: 'italic', color: '#2d2e8c' }}
+              style={{ fontFamily: 'var(--font-display)', fontStyle: 'italic', color: '#3D2B1A' }}
             >
               How it works
             </h2>
@@ -171,7 +171,7 @@ export default function ServicesPage() {
                 <div className="relative pt-2">
                   <span
                     className="absolute top-0 left-0 text-[6rem] leading-none text-stone/5 select-none pointer-events-none"
-                    style={{ fontFamily: 'Poppins, sans-serif', fontWeight: 900 }}
+                    style={{ fontFamily: 'Inter, system-ui, sans-serif', fontWeight: 900 }}
                   >
                     {number}
                   </span>
@@ -182,7 +182,7 @@ export default function ServicesPage() {
                 <div className="pt-1">
                   <h3
                     className="text-2xl md:text-3xl font-light leading-snug mb-3"
-                    style={{ fontFamily: 'var(--font-display)', fontStyle: 'italic', color: '#2d2e8c' }}
+                    style={{ fontFamily: 'var(--font-display)', fontStyle: 'italic', color: '#3D2B1A' }}
                   >
                     {title}
                   </h3>
@@ -199,7 +199,7 @@ export default function ServicesPage() {
             <p className="text-xs tracking-[0.2em] uppercase text-sage font-semibold mb-4">The Case for Design</p>
             <h2
               className="text-3xl md:text-5xl font-light leading-tight max-w-2xl"
-              style={{ fontFamily: 'var(--font-display)', fontStyle: 'italic', color: '#2d2e8c' }}
+              style={{ fontFamily: 'var(--font-display)', fontStyle: 'italic', color: '#3D2B1A' }}
             >
               Why it works
             </h2>
@@ -215,7 +215,7 @@ export default function ServicesPage() {
               <div key={number} className="relative pt-8 pb-4">
                 <span
                   className="absolute top-0 left-0 text-[5rem] sm:text-[8rem] leading-none text-stone/5 select-none pointer-events-none"
-                  style={{ fontFamily: 'Poppins, sans-serif', fontWeight: 900 }}
+                  style={{ fontFamily: 'Inter, system-ui, sans-serif', fontWeight: 900 }}
                 >
                   {number}
                 </span>

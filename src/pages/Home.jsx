@@ -15,7 +15,7 @@ function WorkEntry({ dates, company, role, children }) {
         {dates.map((d, i) => <p key={i}>{d}</p>)}
       </div>
       {!open && (
-        <MdTouchApp size={18} style={{ color: '#fdbf69' }} className="mt-1 opacity-70 shrink-0" />
+        <MdTouchApp size={18} style={{ color: '#C4A882' }} className="mt-1 opacity-70 shrink-0" />
       )}
       <div
         className="flex-1"

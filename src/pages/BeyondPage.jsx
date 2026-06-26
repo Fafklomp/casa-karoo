@@ -9,7 +9,7 @@ function PH({ children }) {
   return (
     <span className="relative inline-block">
       <svg aria-hidden="true" className="absolute inset-0 w-full h-full" viewBox="0 0 120 24" preserveAspectRatio="none" style={{ top: '10%', height: '85%' }}>
-        <path d="M2,18 C10,8 20,4 40,6 C60,8 80,5 100,7 C112,8 118,12 118,16 C118,20 110,22 90,21 C70,20 40,21 20,20 C8,19 2,21 2,18 Z" fill="#fdbf69" opacity="0.7"/>
+        <path d="M2,18 C10,8 20,4 40,6 C60,8 80,5 100,7 C112,8 118,12 118,16 C118,20 110,22 90,21 C70,20 40,21 20,20 C8,19 2,21 2,18 Z" fill="#C4A882" opacity="0.7"/>
       </svg>
       <span className="relative">{children}</span>
     </span>
@@ -233,7 +233,7 @@ export default function BeyondPage() {
                       href={instagram}
                       target="_blank"
                       rel="noopener noreferrer"
-                      className="inline-flex items-center gap-1.5 text-[#fdbf69] hover:opacity-70 transition-opacity duration-200"
+                      className="inline-flex items-center gap-1.5 text-[#C4A882] hover:opacity-70 transition-opacity duration-200"
                     >
                       <SiInstagram size={28} />
                     </a>
@@ -261,7 +261,7 @@ export default function BeyondPage() {
                           onImageClick={() => openGrid(title)}
                         />
                         <div className="absolute top-3 left-3 pointer-events-none z-10">
-                          <MdTouchApp size={22} style={{ color: '#fdbf69' }} />
+                          <MdTouchApp size={22} style={{ color: '#C4A882' }} />
                         </div>
                       </motion.div>
                     )}

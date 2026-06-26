@@ -1,7 +1,6 @@
 import { Link } from 'react-router-dom'
 import PageTransition from '../components/PageTransition'
 import FadeIn from '../components/FadeIn'
-import ImageBanner from '../components/ImageBanner'
 
 const stats = [
   { value: '5★', label: 'Reviews' },
@@ -21,7 +20,7 @@ export default function HeroPage() {
             </p>
             <h1
               className="text-4xl md:text-6xl font-light leading-[1.1] mb-8"
-              style={{ fontFamily: 'var(--font-display)', fontStyle: 'italic', color: '#2d2e8c' }}
+              style={{ fontFamily: 'var(--font-display)', fontStyle: 'italic', color: '#3D2B1A' }}
             >
               Turn your rental into a standout listing.
             </h1>
@@ -50,7 +49,7 @@ export default function HeroPage() {
               <div key={label} className="flex flex-col gap-1">
                 <span
                   className="text-2xl font-light"
-                  style={{ fontFamily: 'var(--font-display)', fontStyle: 'italic', color: '#2d2e8c' }}
+                  style={{ fontFamily: 'var(--font-display)', fontStyle: 'italic', color: '#3D2B1A' }}
                 >
                   {value}
                 </span>
@@ -61,9 +60,6 @@ export default function HeroPage() {
             ))}
           </div>
         </section>
-
-        {/* Image banner */}
-        <ImageBanner />
 
         {/* Spacer before footer */}
         <div className="pb-12" />

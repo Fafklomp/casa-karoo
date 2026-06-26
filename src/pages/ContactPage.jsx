@@ -39,7 +39,7 @@ export default function ContactPage() {
             <p className="text-xs tracking-[0.2em] uppercase text-sage font-semibold mb-2">Let's Talk</p>
             <h1
               className="text-3xl md:text-4xl font-light leading-tight"
-              style={{ fontFamily: 'var(--font-display)', color: '#2d2e8c', fontStyle: 'italic' }}
+              style={{ fontFamily: 'var(--font-display)', color: '#3D2B1A', fontStyle: 'italic' }}
             >
               Start a project
             </h1>
@@ -51,7 +51,7 @@ export default function ContactPage() {
                 Tell us about your space and we'll get back to you within 48 hours.
               </p>
               <div className="flex items-center gap-3 mt-1">
-                <MdEmail size={22} style={{ color: '#fdbf69' }} />
+                <MdEmail size={22} style={{ color: '#C4A882' }} />
                 <a
                   href="mailto:hello@hellocasa.co"
                   className="text-sm text-stone/50 hover:text-stone transition-colors duration-200"
@@ -60,7 +60,7 @@ export default function ContactPage() {
                 </a>
               </div>
               <div className="flex items-center gap-3 mt-5">
-                <SiInstagram size={22} style={{ color: '#fdbf69' }} />
+                <SiInstagram size={22} style={{ color: '#C4A882' }} />
                 <a
                   href="https://www.instagram.com/"
                   target="_blank"
