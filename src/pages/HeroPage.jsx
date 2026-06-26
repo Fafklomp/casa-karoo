@@ -13,13 +13,24 @@ export default function HeroPage() {
   return (
     <PageTransition>
       <FadeIn>
+        {/* Mobile: tagline above image */}
+        <div className="md:hidden pt-14 pb-3 px-6 text-center">
+          <h1
+            className="text-base font-light whitespace-nowrap"
+            style={{ fontFamily: 'var(--font-display)', fontStyle: 'italic', color: '#3D2B1A' }}
+          >
+            Interiors that turn a rental into a retreat.
+          </h1>
+        </div>
+
         {/* Cover photo with heading overlay */}
         <div className="relative w-full h-[48vh] md:h-[56vh] overflow-hidden">
           <img src="/cover.jpg" alt="The Karoo" className="w-full h-full object-cover" style={{ objectPosition: 'center 60%' }} />
           <div className="absolute inset-0 bg-black/20" />
-          <div className="absolute inset-0 flex items-start justify-center text-center px-6 md:px-16 pt-8 md:pt-20">
+          {/* Desktop overlay text */}
+          <div className="hidden md:flex absolute inset-0 items-start justify-center text-center px-16 pt-20">
             <h1
-              className="text-2xl md:text-4xl font-light leading-[1.1]"
+              className="text-4xl font-light leading-[1.1]"
               style={{ fontFamily: 'var(--font-display)', fontStyle: 'italic', color: '#fff' }}
             >
               Interiors that turn a rental into a retreat.
