@@ -67,7 +67,7 @@ export default function WorldMap() {
       </p>
 
       <div
-        className="relative w-full rounded-lg overflow-hidden border border-stone/10"
+        className="relative w-full rounded-lg overflow-hidden"
         style={{ paddingBottom: '50%' }}
       >
         <img
@@ -95,14 +95,14 @@ export default function WorldMap() {
                 style={{ animationDelay: badge.delay, backgroundColor: badge.color }}
               />
               <span
-                className="relative flex items-center justify-center w-7 h-7 rounded-full shadow-sm"
+                className="relative flex items-center justify-center w-4 h-4 md:w-7 md:h-7 rounded-full shadow-sm"
                 style={{
                   background: '#F5F0E8',
                   border: `1.5px solid ${badge.color}`,
                 }}
                 title={badge.label}
               >
-                <badge.Icon size={14} color={badge.color} />
+                <badge.Icon className="w-2 h-2 md:w-3.5 md:h-3.5" color={badge.color} />
               </span>
             </div>
           )

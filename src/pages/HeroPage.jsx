@@ -17,7 +17,7 @@ export default function HeroPage() {
         <div className="relative w-full h-[48vh] md:h-[56vh] overflow-hidden">
           <img src="/cover.jpg" alt="The Karoo" className="w-full h-full object-cover" style={{ objectPosition: 'center 60%' }} />
           <div className="absolute inset-0 bg-black/20" />
-          <div className="absolute top-0 left-0 right-0 flex justify-center px-6 md:px-16 pt-20">
+          <div className="absolute inset-0 flex items-start justify-center text-center px-6 md:px-16 pt-8 md:pt-20">
             <h1
               className="text-2xl md:text-4xl font-light leading-[1.1]"
               style={{ fontFamily: 'var(--font-display)', fontStyle: 'italic', color: '#fff' }}
