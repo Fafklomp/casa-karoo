@@ -1,5 +1,5 @@
 import { useState } from 'react'
-import { MdEmail } from 'react-icons/md'
+import { MdEmail, MdPhone } from 'react-icons/md'
 import { SiInstagram } from 'react-icons/si'
 import PageTransition from '../components/PageTransition'
 import FadeIn from '../components/FadeIn'
@@ -25,7 +25,7 @@ export default function ContactPage() {
     const body = encodeURIComponent(
       `Hi Casa Karoo,\n\nMy name is ${form.name} and my email is ${form.email}.\n\nService of interest: ${form.projectType}\n\n${form.message}`
     )
-    window.location.href = `mailto:hello@hellocasa.co?subject=${subject}&body=${body}`
+    window.location.href = `mailto:juliaktucker@gmail.com?subject=${subject}&body=${body}`
   }
 
   const inputClass =
@@ -53,21 +53,30 @@ export default function ContactPage() {
               <div className="flex items-center gap-3 mt-1">
                 <MdEmail size={22} style={{ color: '#C4A882' }} />
                 <a
-                  href="mailto:hello@hellocasa.co"
+                  href="mailto:juliaktucker@gmail.com"
                   className="text-sm text-stone/50 hover:text-stone transition-colors duration-200"
                 >
-                  hello@hellocasa.co
+                  juliaktucker@gmail.com
+                </a>
+              </div>
+              <div className="flex items-center gap-3 mt-5">
+                <MdPhone size={22} style={{ color: '#C4A882' }} />
+                <a
+                  href="tel:+12063960583"
+                  className="text-sm text-stone/50 hover:text-stone transition-colors duration-200"
+                >
+                  +1 (206) 396-0583
                 </a>
               </div>
               <div className="flex items-center gap-3 mt-5">
                 <SiInstagram size={22} style={{ color: '#C4A882' }} />
                 <a
-                  href="https://www.instagram.com/"
+                  href="https://www.instagram.com/casakaroo/"
                   target="_blank"
                   rel="noopener noreferrer"
                   className="text-sm text-stone/50 hover:text-stone transition-colors duration-200"
                 >
-                  @hellocasa
+                  @casakaroo
                 </a>
               </div>
             </div>

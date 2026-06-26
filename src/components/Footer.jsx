@@ -2,8 +2,8 @@ import { SiInstagram } from 'react-icons/si'
 import { MdEmail } from 'react-icons/md'
 
 const socials = [
-  { icon: SiInstagram, href: 'https://www.instagram.com/', label: 'Instagram' },
-  { icon: MdEmail,     href: 'mailto:hello@hellocasa.co',  label: 'Email'     },
+  { icon: SiInstagram, href: 'https://www.instagram.com/casakaroo/', label: 'Instagram' },
+  { icon: MdEmail,     href: 'mailto:juliaktucker@gmail.com',  label: 'Email'     },
 ]
 
 export default function Footer() {
