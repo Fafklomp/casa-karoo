@@ -22,10 +22,10 @@ export default function HeroPage() {
               className="text-4xl md:text-6xl font-light leading-[1.1] mb-8"
               style={{ fontFamily: 'var(--font-display)', fontStyle: 'italic', color: '#3D2B1A' }}
             >
-              Turn your rental into a standout listing.
+              Interiors that turn a rental into a retreat.
             </h1>
             <p className="text-sm md:text-base font-light leading-relaxed text-stone/70 mb-10 max-w-xl">
-              Interior design and furnishing packages built for Airbnb hosts who want better photos, stronger reviews, and higher nightly rates.
+              Interior design & furnishing packages built for rental hosts who want better photos, stronger reviews & higher nightly rates.
             </p>
             <div className="flex flex-wrap gap-4">
               <Link
