@@ -12,7 +12,7 @@ export default function Footer() {
     <footer className="px-6 md:px-16 py-10 max-w-5xl mx-auto border-t border-stone/10">
       <div className="flex flex-col sm:flex-row items-start sm:items-center justify-between gap-4">
         <p className="text-xs text-stone/30 tracking-wide">
-          © {year} Hello Casa. All rights reserved.
+          © {year} Casa Karoo. All rights reserved.
         </p>
         <div className="flex items-center gap-10">
           {socials.map(({ icon: Icon, href, label }) => (

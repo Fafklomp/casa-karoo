@@ -21,9 +21,9 @@ export default function ContactPage() {
 
   const handleSubmit = (e) => {
     e.preventDefault()
-    const subject = encodeURIComponent(`Hello Casa enquiry from ${form.name}`)
+    const subject = encodeURIComponent(`Casa Karoo enquiry from ${form.name}`)
     const body = encodeURIComponent(
-      `Hi Hello Casa,\n\nMy name is ${form.name} and my email is ${form.email}.\n\nService of interest: ${form.projectType}\n\n${form.message}`
+      `Hi Casa Karoo,\n\nMy name is ${form.name} and my email is ${form.email}.\n\nService of interest: ${form.projectType}\n\n${form.message}`
     )
     window.location.href = `mailto:hello@hellocasa.co?subject=${subject}&body=${body}`
   }

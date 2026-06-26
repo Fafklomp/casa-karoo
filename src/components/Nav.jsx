@@ -38,7 +38,7 @@ export default function Nav() {
           to="/"
           className="text-sm font-light tracking-widest uppercase transition-colors duration-200 text-stone/60 hover:text-stone"
         >
-          Hello Casa
+          Casa Karoo
         </Link>
 
         {/* Desktop links */}
