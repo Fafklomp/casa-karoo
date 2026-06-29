@@ -1,3 +1,4 @@
+import { useState } from 'react'
 import { Link } from 'react-router-dom'
 import PageTransition from '../components/PageTransition'
 import FadeIn from '../components/FadeIn'
@@ -11,7 +12,7 @@ const services = [
   },
   {
     number: '02',
-    title: 'Full Design Package',
+    title: 'Design Package',
     description:
       'End-to-end sourcing, procurement, and installation of all furniture, lighting, textiles, and accessories. We handle everything from first sketch to final arrangement.',
   },
@@ -85,6 +86,64 @@ function PHB({ children }) {
   return <span style={{ borderBottom: '2px solid #8A9EBA', paddingBottom: '1px' }}>{children}</span>
 }
 
+function ServiceAccordion() {
+  const [open, setOpen] = useState(null)
+
+  const items = [
+    {
+      id: 'consultation',
+      title: 'Design Consultation',
+      description: (
+        <>
+          A focused session to define your space's <PH>style direction</PH>, <PH>colour palette</PH>, and <PH>furniture layout</PH>. Perfect for hosts who want a clear plan to execute themselves.
+        </>
+      ),
+    },
+    {
+      id: 'package',
+      title: 'Design Package',
+      description: (
+        <>
+          <PH>End-to-end</PH> sourcing, procurement, and installation of all furniture, lighting, textiles, and accessories. We handle everything from <PH>first sketch to final arrangement</PH>.
+        </>
+      ),
+    },
+  ]
+
+  return (
+    <div className="grid md:grid-cols-2 gap-6">
+      {items.map(({ id, title, description }) => {
+        const isOpen = open === id
+        return (
+          <button
+            key={id}
+            className="relative border-2 rounded-sm p-8 pt-10 overflow-hidden text-left w-full group"
+            style={{ borderColor: '#8A9EBA' }}
+            onClick={() => setOpen(isOpen ? null : id)}
+          >
+            <div className="flex items-start justify-between">
+              <h2 className="text-2xl font-light leading-snug" style={{ fontFamily: 'var(--font-display)', fontStyle: 'italic', color: '#3D2B1A' }}>
+                {title}
+              </h2>
+              <span
+                className="ml-4 shrink-0 text-xl text-stone/40 group-hover:text-stone/70"
+                style={{ display: 'inline-block', transition: 'transform 0.3s', transform: isOpen ? 'rotate(45deg)' : 'rotate(0deg)' }}
+              >
+                +
+              </span>
+            </div>
+            {isOpen && (
+              <p className="text-xs md:text-sm font-light leading-relaxed text-stone/70 mt-4">
+                {description}
+              </p>
+            )}
+          </button>
+        )
+      })}
+    </div>
+  )
+}
+
 export default function ServicesPage() {
   return (
     <PageTransition>
@@ -101,25 +160,8 @@ export default function ServicesPage() {
             </h1>
           </div>
 
-          {/* Service cards */}
-          <div className="grid md:grid-cols-2 gap-6">
-            <div className="relative border-2 rounded-sm p-8 pt-10 overflow-hidden" style={{ borderColor: '#8A9EBA' }}>
-              <h2 className="text-2xl font-light leading-snug mb-4" style={{ fontFamily: 'var(--font-display)', fontStyle: 'italic', color: '#3D2B1A' }}>
-                Design Consultation
-              </h2>
-              <p className="text-xs md:text-sm font-light leading-relaxed text-stone/70">
-                A focused session to define your space's <PH>style direction</PH>, <PH>colour palette</PH>, and <PH>furniture layout</PH>. Perfect for hosts who want a clear plan to execute themselves.
-              </p>
-            </div>
-            <div className="relative border-2 rounded-sm p-8 pt-10 overflow-hidden" style={{ borderColor: '#8A9EBA' }}>
-              <h2 className="text-2xl font-light leading-snug mb-4" style={{ fontFamily: 'var(--font-display)', fontStyle: 'italic', color: '#3D2B1A' }}>
-                Full Design Package
-              </h2>
-              <p className="text-xs md:text-sm font-light leading-relaxed text-stone/70">
-                <PH>End-to-end</PH> sourcing, procurement, and installation of all furniture, lighting, textiles, and accessories. We handle everything from <PH>first sketch to final arrangement</PH>.
-              </p>
-            </div>
-          </div>
+          {/* Service accordion */}
+          <ServiceAccordion />
 
           {/* Custom note */}
           <p className="mt-12 text-sm font-light text-stone/60">
