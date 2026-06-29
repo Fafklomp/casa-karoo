@@ -95,7 +95,7 @@ function ServiceAccordion() {
       title: 'Design Consultation',
       description: (
         <>
-          A focused session to define your space's <PH>style direction</PH>, <PH>colour palette</PH>, and <PH>furniture layout</PH>.
+          A focused session to get to know each other, understand your <PH>vision</PH>, define your project's <PH>goals</PH>, <PH>limitations and opportunities</PH>. Together, we will explore the potential design direction, colour palette, and furniture layout.
         </>
       ),
     },
