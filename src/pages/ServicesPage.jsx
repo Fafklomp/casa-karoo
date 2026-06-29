@@ -95,7 +95,7 @@ function ServiceAccordion() {
       title: 'Design Consultation',
       description: (
         <>
-          A focused session to define your space's <PH>style direction</PH>, <PH>colour palette</PH>, and <PH>furniture layout</PH>. Perfect for hosts who want a clear plan to execute themselves.
+          A focused session to define your space's <PH>style direction</PH>, <PH>colour palette</PH>, and <PH>furniture layout</PH>.
         </>
       ),
     },
@@ -103,9 +103,19 @@ function ServiceAccordion() {
       id: 'package',
       title: 'Design Package',
       description: (
-        <>
-          <PH>End-to-end</PH> sourcing, procurement, and installation of all furniture, lighting, textiles, and accessories. We handle everything from <PH>first sketch to final arrangement</PH>.
-        </>
+        <ul className="space-y-2 text-xs md:text-sm font-light leading-relaxed text-stone/70 list-none">
+          {[
+            <>X3 <PH>schematic design</PH> concepts, each exploring a different layout and design direction for your space.</>,
+            <>X3 curated <PH>look-and-feel</PH> (FF&E) boards, illustrating the furniture, finishes, lighting, and styling.</>,
+            <>A cohesive <PH>colour and material palette</PH>.</>,
+            <><PH>Construction drawings</PH>, including plans, elevations, and custom joinery details where required to communicate the design intent.</>,
+            <>Curated furniture, lighting, and décor selections.</>,
+            <>A comprehensive <PH>FF&E schedule</PH> with product specifications and shopping links.</>,
+            <>Artwork, styling, and finishing-touch recommendations.</>,
+          ].map((item, i) => (
+            <li key={i} className="flex gap-2"><span className="shrink-0 text-sage">•</span><span>{item}</span></li>
+          ))}
+        </ul>
       ),
     },
   ]
