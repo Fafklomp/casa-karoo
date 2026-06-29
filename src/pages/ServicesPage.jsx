@@ -196,7 +196,7 @@ export default function ServicesPage() {
 
           <div className="space-y-6">
             {steps.map(({ number, title, description }) => (
-              <div key={number} className="grid md:grid-cols-[200px_1fr] gap-8 md:gap-16 items-start relative">
+              <div key={number} className="grid md:grid-cols-[200px_1fr] gap-8 md:gap-16 items-start relative ">
                 <div className="relative pt-2">
                   <span
                     className="absolute top-0 left-0 text-[5rem] leading-none text-stone/5 select-none pointer-events-none"
