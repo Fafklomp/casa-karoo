@@ -29,25 +29,25 @@ const steps = [
     number: '02',
     title: 'Discovery Call',
     description:
-      'A short call to understand your listing, your guests, and what success looks like for you.',
+      'A focused introduction call to understand your listing, your vision, and what success looks like for your short-term rental.',
   },
   {
     number: '03',
     title: 'Proposal & Quote',
     description:
-      'We send you a tailored proposal with scope, timeline, and pricing. No surprises.',
+      'We send you a tailored proposal outlining scope, deliverables, timeline, and pricing. Clear, considered, and transparent.',
   },
   {
     number: '04',
-    title: 'Design & Sourcing',
+    title: 'Design',
     description:
-      'We get to work — designing, sourcing, and coordinating everything so you don\'t have to.',
+      'We develop your concept, including schematic design options, mood boards, material direction, and furniture layouts. This is where your space begins to take shape.',
   },
   {
     number: '05',
-    title: 'Handover',
+    title: 'Design Package Delivery',
     description:
-      'Your space is ready for guests. We do a final walkthrough and hand over a styled, photo-ready listing.',
+      'You receive your complete design package, including technical drawings and FF&E specifications… ready for you or your local team to bring to life!',
   },
 ]
 
@@ -196,8 +196,8 @@ export default function ServicesPage() {
 
           <div className="space-y-6">
             {steps.map(({ number, title, description }) => (
-              <div key={number} className="grid md:grid-cols-[200px_1fr] gap-8 md:gap-16 items-start relative ">
-                <div className="relative pt-2">
+              <div key={number} className="flex gap-6 md:grid md:grid-cols-[200px_1fr] md:gap-16 items-start relative">
+                <div className="relative pt-2 shrink-0">
                   <span
                     className="absolute top-0 left-0 text-[5rem] leading-none text-stone/5 select-none pointer-events-none"
                     style={{ fontFamily: 'Inter, system-ui, sans-serif', fontWeight: 900 }}
