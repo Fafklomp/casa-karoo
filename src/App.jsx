@@ -1,5 +1,6 @@
 import { BrowserRouter, Routes, Route, useLocation } from 'react-router-dom'
 import { AnimatePresence } from 'framer-motion'
+import { useEffect } from 'react'
 import Nav from './components/Nav'
 import HeroPage from './pages/HeroPage'
 import ServicesPage from './pages/ServicesPage'
@@ -10,6 +11,7 @@ import Footer from './components/Footer'
 
 function AnimatedRoutes() {
   const location = useLocation()
+  useEffect(() => { window.scrollTo(0, 0) }, [location.pathname])
   return (
     <AnimatePresence mode="wait">
       <Routes location={location} key={location.pathname}>

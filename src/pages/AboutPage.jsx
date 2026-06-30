@@ -42,9 +42,9 @@ export default function AboutPage() {
           <div className="grid md:grid-cols-[200px_1fr] gap-8 md:gap-16 items-start border-t border-stone/10 pt-12 mb-16">
             <div className="space-y-3">
               <p className="text-xs tracking-[0.2em] uppercase text-sage font-semibold pt-1">The Founder</p>
-              <div className="w-full aspect-[5/4] md:aspect-auto overflow-hidden rounded-sm">
+              <div className="w-full aspect-[5/4] overflow-hidden rounded-sm md:h-64 md:aspect-auto">
                 <img src="/founder-mobile.jpg" alt="Jules Tucker" className="w-full h-full object-cover object-center md:hidden" />
-                <img src="/founder.jpg" alt="Jules Tucker" className="hidden md:block w-full h-auto" />
+                <img src="/founder.jpg" alt="Jules Tucker" className="hidden md:block w-full h-full object-cover object-top" />
               </div>
             </div>
             <div className="space-y-4">
