@@ -1,5 +1,6 @@
 import { useState } from 'react'
 import { Link } from 'react-router-dom'
+import { FiCamera, FiTrendingUp, FiStar, FiZap } from 'react-icons/fi'
 import PageTransition from '../components/PageTransition'
 import FadeIn from '../components/FadeIn'
 
@@ -242,25 +243,25 @@ export default function ServicesPage() {
 
           <div className="grid md:grid-cols-2 gap-8 mb-16">
             <div className="pb-4">
-              <p className="text-xs tracking-[0.2em] uppercase text-sage font-semibold mb-3">Better Photos</p>
+              <div className="flex items-center gap-2 mb-3"><FiCamera className="text-[#8A9EBA]" size={16} /><p className="text-xs tracking-[0.2em] uppercase text-sage font-semibold">Better Photos</p></div>
               <p className="text-xs md:text-sm font-light leading-relaxed text-stone/70">
                 Listings with <PH>professionally styled spaces</PH> get significantly more clicks. Great design gives photographers something to work with.
               </p>
             </div>
             <div className="pb-4">
-              <p className="text-xs tracking-[0.2em] uppercase text-sage font-semibold mb-3">Higher Nightly Rates</p>
+              <div className="flex items-center gap-2 mb-3"><FiTrendingUp className="text-[#8A9EBA]" size={16} /><p className="text-xs tracking-[0.2em] uppercase text-sage font-semibold">Higher Nightly Rates</p></div>
               <p className="text-xs md:text-sm font-light leading-relaxed text-stone/70">
                 A well-designed space <PH>commands a premium</PH>. Guests pay more for spaces that feel intentional, comfortable, and distinctive.
               </p>
             </div>
             <div className="pb-4">
-              <p className="text-xs tracking-[0.2em] uppercase text-sage font-semibold mb-3">Stronger Reviews</p>
+              <div className="flex items-center gap-2 mb-3"><FiStar className="text-[#8A9EBA]" size={16} /><p className="text-xs tracking-[0.2em] uppercase text-sage font-semibold">Stronger Reviews</p></div>
               <p className="text-xs md:text-sm font-light leading-relaxed text-stone/70">
                 Guests notice the details. Thoughtful design leads to <PH>5-star reviews</PH> that compound into more bookings over time.
               </p>
             </div>
             <div className="pb-4">
-              <p className="text-xs tracking-[0.2em] uppercase text-sage font-semibold mb-3">Faster Bookings</p>
+              <div className="flex items-center gap-2 mb-3"><FiZap className="text-[#8A9EBA]" size={16} /><p className="text-xs tracking-[0.2em] uppercase text-sage font-semibold">Faster Bookings</p></div>
               <p className="text-xs md:text-sm font-light leading-relaxed text-stone/70">
                 A listing that <PH>stands out in search</PH> gets booked faster, reducing vacancy and maximising your return.
               </p>
