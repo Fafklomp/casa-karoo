@@ -21,7 +21,7 @@ export default function AboutPage() {
           <div className="grid md:grid-cols-[200px_1fr] gap-8 md:gap-16 items-start mb-16">
             <div className="space-y-3">
               <p className="text-xs tracking-[0.2em] uppercase text-sage font-semibold pt-1">Our Story</p>
-              <div className="w-1/2 md:w-full h-32 md:h-56 overflow-hidden rounded-sm">
+              <div className="w-2/3 md:w-full h-36 md:h-56 overflow-hidden rounded-sm">
                 <img src="/karoo-road.jpg" alt="The Karoo road" className="w-full h-full object-cover object-center" />
               </div>
             </div>
@@ -46,10 +46,7 @@ export default function AboutPage() {
                 Hi, I'm Jules!
               </p>
               <p className="text-sm font-light leading-relaxed text-stone/80">
-                As an Interior Architect, I've always believed that the spaces we inhabit shape how we feel, connect and experience the world. My career has taken me from designing luxury hospitality projects and private residences to working across diverse environments, each reinforcing the importance of thoughtful, human-centred design.
-              </p>
-              <p className="text-sm font-light leading-relaxed text-stone/80">
-                Casa Karoo was born from a desire to create spaces that feel grounded, welcoming, and deeply connected to place. Inspired by the vast landscapes and quiet beauty of the South African Karoo, the studio embraces simplicity, natural materials, and timeless design to create interiors that evoke a sense of calm.
+                As a trained Interior Architect, I've always believed that the spaces we inhabit shape how we feel, connect and experience the world. My career has taken me from designing luxury hospitality projects and private residences to working across diverse environments, each reinforcing the importance of thoughtful, human-centred design.
               </p>
               <p className="text-sm font-light leading-relaxed text-stone/80">
                 I believe that great design is more than creating beautiful spaces. It's about creating meaningful experiences. Whether it's a short-term rental that guests remember long after they've left, a boutique hospitality space with its own unique story, or a home that feels effortlessly lived in, every project is approached with intention, care and attention to detail.
