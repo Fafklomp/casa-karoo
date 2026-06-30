@@ -4,32 +4,35 @@ import { SiInstagram } from 'react-icons/si'
 import PageTransition from '../components/PageTransition'
 import FadeIn from '../components/FadeIn'
 
-const projectTypes = [
-  'Design Consultation',
-  'Full Furnishing Package',
-  'Styling & Staging',
-  'Photography-Ready Setup',
-  'Not sure yet',
-]
-
 export default function ContactPage() {
-  const [form, setForm] = useState({ name: '', email: '', projectType: '', message: '' })
+  const referralOptions = ['Social Media', 'Web Search', 'Recommendation', 'Other']
+  const [form, setForm] = useState({ firstName: '', lastName: '', email: '', location: '', referral: [], message: '' })
 
   const handleChange = (e) => {
     setForm(f => ({ ...f, [e.target.name]: e.target.value }))
   }
 
+  const handleReferralChange = (option) => {
+    setForm(f => ({
+      ...f,
+      referral: f.referral.includes(option)
+        ? f.referral.filter(r => r !== option)
+        : [...f.referral, option]
+    }))
+  }
+
   const handleSubmit = (e) => {
     e.preventDefault()
-    const subject = encodeURIComponent(`Casa Karoo enquiry from ${form.name}`)
+    const subject = encodeURIComponent(`Casa Karoo enquiry from ${form.firstName} ${form.lastName}`)
     const body = encodeURIComponent(
-      `Hi Casa Karoo,\n\nMy name is ${form.name} and my email is ${form.email}.\n\nService of interest: ${form.projectType}\n\n${form.message}`
+      `Hi Casa Karoo,\n\nMy name is ${form.firstName} ${form.lastName} and my email is ${form.email}.\nCity / Neighbourhood: ${form.location}\nHow they heard about us: ${form.referral.join(', ')}\n\n${form.message}`
     )
     window.location.href = `mailto:juliaktucker@gmail.com?subject=${subject}&body=${body}`
   }
 
   const inputClass =
-    'w-full bg-transparent border-b border-stone/15 py-3 text-sm text-stone placeholder:text-stone/30 focus:outline-none focus:border-terra transition-colors duration-200'
+    'w-full bg-transparent border border-stone/20 rounded-sm px-4 py-3 text-sm text-stone placeholder:text-stone/30 focus:outline-none focus:border-terra transition-colors duration-200'
+  const labelClass = 'block text-sm text-stone/40 mb-1'
 
   return (
     <PageTransition>
@@ -82,45 +85,53 @@ export default function ContactPage() {
             </div>
 
             <form onSubmit={handleSubmit} className="space-y-7">
-              <input
-                type="text"
-                name="name"
-                placeholder="Your name"
-                required
-                value={form.name}
-                onChange={handleChange}
-                className={inputClass}
-              />
-              <input
-                type="email"
-                name="email"
-                placeholder="Your email"
-                required
-                value={form.email}
-                onChange={handleChange}
-                className={inputClass}
-              />
-              <select
-                name="projectType"
-                required
-                value={form.projectType}
-                onChange={handleChange}
-                className={`${inputClass} appearance-none`}
-              >
-                <option value="" disabled>Service of interest</option>
-                {projectTypes.map(type => (
-                  <option key={type} value={type}>{type}</option>
-                ))}
-              </select>
-              <textarea
-                name="message"
-                placeholder="Tell us about your space"
-                required
-                rows={4}
-                value={form.message}
-                onChange={handleChange}
-                className={`${inputClass} resize-none`}
-              />
+              <div className="grid grid-cols-2 gap-4">
+                <div>
+                  <label className={labelClass}>First name</label>
+                  <input type="text" name="firstName" required value={form.firstName} onChange={handleChange} className={inputClass} />
+                </div>
+                <div>
+                  <label className={labelClass}>Last name</label>
+                  <input type="text" name="lastName" required value={form.lastName} onChange={handleChange} className={inputClass} />
+                </div>
+              </div>
+              <div>
+                <label className={labelClass}>Your email</label>
+                <input type="email" name="email" required value={form.email} onChange={handleChange} className={inputClass} />
+              </div>
+              <div>
+                <label className={labelClass}>City or neighbourhood</label>
+                <input type="text" name="location" placeholder="Where are you located?" value={form.location} onChange={handleChange} className={inputClass} />
+              </div>
+              <div>
+                <label className={labelClass}>How did you hear about Casa Karoo?</label>
+                <div className="grid grid-cols-2 gap-2 mt-1">
+                  {referralOptions.map(option => {
+                    const checked = form.referral.includes(option)
+                    return (
+                      <label key={option} className="flex items-center gap-2 cursor-pointer">
+                        <span
+                          onClick={() => handleReferralChange(option)}
+                          className="w-4 h-4 rounded-sm border flex items-center justify-center shrink-0 transition-colors duration-200"
+                          style={{ borderColor: '#8A9EBA', backgroundColor: checked ? '#8A9EBA' : 'transparent' }}
+                        >
+                          {checked && (
+                            <svg width="10" height="8" viewBox="0 0 10 8" fill="none">
+                              <path d="M1 4L3.5 6.5L9 1" stroke="white" strokeWidth="1.5" strokeLinecap="round" strokeLinejoin="round" />
+                            </svg>
+                          )}
+                        </span>
+                        <span className={`text-sm transition-colors duration-200 ${checked ? 'text-stone/70' : 'text-stone/40'}`}>{option}</span>
+                      </label>
+                    )
+                  })}
+                </div>
+              </div>
+              <div>
+                <label className={labelClass}>Tell us about your space</label>
+                <textarea name="message" required rows={4} maxLength={700} value={form.message} onChange={handleChange} className={`${inputClass} resize-none`} />
+                <p className="text-xs text-stone/30 text-right mt-1">{form.message.length} of 700 max characters</p>
+              </div>
               <button
                 type="submit"
                 className="mt-2 text-xs tracking-widest uppercase text-terra border border-terra/60 px-8 py-3 rounded-full hover:bg-terra hover:border-terra hover:text-offwhite transition-all duration-200"
