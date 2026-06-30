@@ -63,7 +63,7 @@ export default function Nav() {
             className="border-t border-stone/10 px-6 md:px-16 py-8"
             style={{ backgroundColor: '#F5F0E8' }}
           >
-            <ul className="flex flex-col gap-6">
+            <ul className="flex flex-col gap-6 items-end">
               {navLinks.map(({ label, to }) => (
                 <li key={label}>
                   <NavLink to={to} className={linkClass}>

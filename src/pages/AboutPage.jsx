@@ -15,6 +15,9 @@ export default function AboutPage() {
             >
               About Us
             </h1>
+            <p className="mt-3 text-xl md:text-2xl font-light text-stone/60" style={{ fontFamily: 'var(--font-display)', fontStyle: 'italic' }}>
+              Rooted in place, guided by intention.
+            </p>
           </div>
 
           {/* Bio */}
