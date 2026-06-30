@@ -19,7 +19,12 @@ export default function AboutPage() {
 
           {/* Bio */}
           <div className="grid md:grid-cols-[200px_1fr] gap-8 md:gap-16 items-start mb-16">
-            <p className="text-xs tracking-[0.2em] uppercase text-sage font-semibold pt-1">Our Story</p>
+            <div className="space-y-3">
+              <p className="text-xs tracking-[0.2em] uppercase text-sage font-semibold pt-1">Our Story</p>
+              <div className="w-full h-56 overflow-hidden rounded-sm">
+                <img src="/karoo-road.jpg" alt="The Karoo road" className="w-full h-full object-cover object-center" />
+              </div>
+            </div>
             <div className="space-y-4">
               <p className="text-sm font-light leading-relaxed text-stone/80">
                 Casa Karoo was born from a love of thoughtful spaces, grounded living, and the quiet beauty of the South African Karoo. Inspired by its vast landscapes, earthy palette, and sense of stillness, we create interiors that feel calm, intentional, and deeply connected to place.
@@ -32,7 +37,10 @@ export default function AboutPage() {
 
           {/* Founder */}
           <div className="grid md:grid-cols-[200px_1fr] gap-8 md:gap-16 items-start border-t border-stone/10 pt-12 mb-16">
-            <p className="text-xs tracking-[0.2em] uppercase text-sage font-semibold pt-1">The Founder</p>
+            <div className="space-y-3">
+              <p className="text-xs tracking-[0.2em] uppercase text-sage font-semibold pt-1">The Founder</p>
+              <img src="/founder.jpg" alt="Jules Tucker" className="w-full h-auto rounded-sm block" />
+            </div>
             <div className="space-y-4">
               <p className="text-sm font-light leading-relaxed text-stone/80">
                 Hi, I'm Jules!
