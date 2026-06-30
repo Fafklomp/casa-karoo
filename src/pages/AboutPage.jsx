@@ -43,7 +43,8 @@ export default function AboutPage() {
             <div className="space-y-3">
               <p className="text-xs tracking-[0.2em] uppercase text-sage font-semibold pt-1">The Founder</p>
               <div className="w-full aspect-[3/2] md:aspect-auto overflow-hidden rounded-sm">
-                <img src="/founder.jpg" alt="Jules Tucker" className="w-full h-full md:h-auto object-cover object-[center_60%] md:object-contain" />
+                <img src="/founder-mobile.jpg" alt="Jules Tucker" className="w-full h-full object-cover object-center md:hidden" />
+                <img src="/founder.jpg" alt="Jules Tucker" className="hidden md:block w-full h-auto" />
               </div>
             </div>
             <div className="space-y-4">
