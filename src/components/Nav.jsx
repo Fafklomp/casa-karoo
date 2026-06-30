@@ -29,10 +29,7 @@ export default function Nav() {
 
   return (
     <header className="fixed top-0 left-0 right-0 z-50" style={{ backgroundColor: '#F5F0E8' }}>
-      <nav className="max-w-5xl mx-auto px-6 md:px-16 h-14 flex items-center justify-between">
-        {/* Spacer to balance the hamburger */}
-        <div className="w-10" />
-
+      <nav className="relative h-14 flex items-center justify-center">
         <Link
           to="/"
           className="text-sm font-light tracking-widest uppercase transition-colors duration-200 text-stone/60 hover:text-stone"
@@ -40,9 +37,9 @@ export default function Nav() {
           Casa Karoo
         </Link>
 
-        {/* Menu toggle — all screen sizes */}
+        {/* Menu toggle — pinned to far right */}
         <button
-          className="flex flex-col justify-center items-center gap-1.5 w-10 h-10 -mr-2"
+          className="absolute right-4 flex flex-col justify-center items-center gap-1.5 w-10 h-10"
           onClick={() => setOpen(o => !o)}
           aria-label={open ? 'Close menu' : 'Open menu'}
           aria-expanded={open}
@@ -53,17 +50,17 @@ export default function Nav() {
         </button>
       </nav>
 
-      {/* Dropdown */}
+      {/* Dropdown — always anchored to far right of screen */}
       <AnimatePresence>
         {open && (
           <motion.div
             initial={{ opacity: 0, y: -6 }}
             animate={{ opacity: 1, y: 0, transition: { duration: 0.2 } }}
             exit={{ opacity: 0, y: -6, transition: { duration: 0.15 } }}
-            className="border-t border-stone/10 px-6 md:px-16 py-8"
+            className="absolute top-14 right-0 border border-stone/10 rounded-sm py-6 px-8 shadow-sm"
             style={{ backgroundColor: '#F5F0E8' }}
           >
-            <ul className="flex flex-col gap-6 items-end">
+            <ul className="flex flex-col gap-5 items-end">
               {navLinks.map(({ label, to }) => (
                 <li key={label}>
                   <NavLink to={to} className={linkClass}>
