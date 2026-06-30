@@ -24,7 +24,7 @@ export default function AboutPage() {
           <div className="grid md:grid-cols-[200px_1fr] gap-8 md:gap-16 items-start mb-16">
             <div className="space-y-3">
               <p className="text-xs tracking-[0.2em] uppercase text-sage font-semibold pt-1">Our Story</p>
-              <img src="/karoo-road.jpg" alt="The Karoo road" className="w-2/3 md:w-full h-auto rounded-sm block" />
+              <img src="/karoo-road.jpg" alt="The Karoo road" className="w-1/2 md:w-full h-auto rounded-sm block" />
             </div>
             <div className="space-y-4">
               <p className="text-sm font-light leading-relaxed text-stone/80">
