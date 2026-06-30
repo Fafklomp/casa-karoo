@@ -244,36 +244,44 @@ export default function ServicesPage() {
           <div className="grid md:grid-cols-2 gap-8 mb-16">
             <div className="pb-4">
               <div className="flex items-center gap-2 mb-3"><FiCamera className="text-[#8A9EBA]" size={16} /><p className="text-xs tracking-[0.2em] uppercase text-sage font-semibold">Better Photos</p></div>
-              <p className="text-xs md:text-sm font-light leading-relaxed text-stone/70">
-                A well-designed, styled space gives photographers something to work with — resulting in images that <PH>stop the scroll</PH> and drive more clicks to your listing.
-              </p>
+              <div className="border-2 rounded-sm p-4" style={{ borderColor: '#8A9EBA' }}>
+                <p className="text-xs md:text-sm font-light leading-relaxed text-stone/70">
+                  A well-designed, styled space gives photographers something to work with — resulting in images that <PH>stop the scroll</PH> and drive more clicks to your listing.
+                </p>
+              </div>
               <p className="text-xs font-light text-stone/40 mt-2 italic">
                 Airbnb reports that listings with high-quality photos receive significantly more views and are booked up to 24% more often than listings without. — Airbnb Host Resources
               </p>
             </div>
             <div className="pb-4">
               <div className="flex items-center gap-2 mb-3"><FiTrendingUp className="text-[#8A9EBA]" size={16} /><p className="text-xs tracking-[0.2em] uppercase text-sage font-semibold">Higher Nightly Rates</p></div>
-              <p className="text-xs md:text-sm font-light leading-relaxed text-stone/70">
-                A well-designed space <PH>commands a premium</PH>. Guests pay more for spaces that feel intentional, comfortable, and distinctive.
-              </p>
+              <div className="border-2 rounded-sm p-4" style={{ borderColor: '#8A9EBA' }}>
+                <p className="text-xs md:text-sm font-light leading-relaxed text-stone/70">
+                  A well-designed space <PH>commands a premium</PH>. Guests pay more for spaces that feel intentional, comfortable, and distinctive.
+                </p>
+              </div>
               <p className="text-xs font-light text-stone/40 mt-2 italic">
                 STR analytics firm AirDNA found that design-forward listings consistently achieve 20–35% higher average daily rates than comparable properties.
               </p>
             </div>
             <div className="pb-4">
               <div className="flex items-center gap-2 mb-3"><FiStar className="text-[#8A9EBA]" size={16} /><p className="text-xs tracking-[0.2em] uppercase text-sage font-semibold">Stronger Reviews</p></div>
-              <p className="text-xs md:text-sm font-light leading-relaxed text-stone/70">
-                Guests notice the details. Thoughtful design leads to <PH>5-star reviews</PH> that compound into more bookings over time.
-              </p>
+              <div className="border-2 rounded-sm p-4" style={{ borderColor: '#8A9EBA' }}>
+                <p className="text-xs md:text-sm font-light leading-relaxed text-stone/70">
+                  Guests notice the details. Thoughtful design leads to <PH>5-star reviews</PH> that compound into more bookings over time.
+                </p>
+              </div>
               <p className="text-xs font-light text-stone/40 mt-2 italic">
                 According to Airbnb's host research, listings rated 4.8★ or above appear up to 3× more frequently in search results than lower-rated properties.
               </p>
             </div>
             <div className="pb-4">
               <div className="flex items-center gap-2 mb-3"><FiZap className="text-[#8A9EBA]" size={16} /><p className="text-xs tracking-[0.2em] uppercase text-sage font-semibold">Faster Bookings</p></div>
-              <p className="text-xs md:text-sm font-light leading-relaxed text-stone/70">
-                A listing that <PH>stands out in search</PH> gets booked faster, reducing vacancy and maximising your return.
-              </p>
+              <div className="border-2 rounded-sm p-4" style={{ borderColor: '#8A9EBA' }}>
+                <p className="text-xs md:text-sm font-light leading-relaxed text-stone/70">
+                  A listing that <PH>stands out in search</PH> gets booked faster, reducing vacancy and maximising your return.
+                </p>
+              </div>
               <p className="text-xs font-light text-stone/40 mt-2 italic">
                 Optimised, visually compelling listings fill their calendars up to 2× faster, directly reducing vacancy loss. — Transparent Short-Term Rental Report
               </p>
