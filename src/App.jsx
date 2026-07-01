@@ -7,6 +7,7 @@ import ServicesPage from './pages/ServicesPage'
 import GalleryPage from './pages/GalleryPage'
 import AboutPage from './pages/AboutPage'
 import ContactPage from './pages/ContactPage'
+import MissionPage from './pages/MissionPage'
 import Footer from './components/Footer'
 
 function AnimatedRoutes() {
@@ -20,6 +21,7 @@ function AnimatedRoutes() {
         <Route path="/gallery"      element={<GalleryPage />} />
         <Route path="/about"        element={<AboutPage />} />
         <Route path="/contact"      element={<ContactPage />} />
+        <Route path="/mission"      element={<MissionPage />} />
       </Routes>
     </AnimatePresence>
   )

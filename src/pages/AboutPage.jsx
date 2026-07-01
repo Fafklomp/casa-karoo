@@ -20,6 +20,38 @@ export default function AboutPage() {
             </p>
           </div>
 
+          {/* 5 Pillars */}
+          <div className="flex flex-nowrap justify-between gap-2 md:gap-6 border-b border-stone/10 pb-12 mb-16">
+            {[
+              { label: 'Storytelling',   src: '/storytelling.mp4',  style: {} },
+              { label: 'Wellbeing',      src: '/wellbeing.mp4',      style: {} },
+              { label: 'Sustainability', src: '/sustainability.mp4', style: { objectPosition: '50% 30%' } },
+              { label: 'Context',        src: '/context.mp4',        style: { objectPosition: '50% 70%' } },
+              { label: 'Craftsmanship',  src: '/craftsmanship.mp4',  style: {} },
+            ].map(({ label, src, style }) => (
+              <div key={label} className="relative">
+                <div className="w-14 h-14 sm:w-24 sm:h-24 md:w-32 md:h-32 rounded-full border border-stone/10 bg-stone/5 shrink-0 overflow-hidden">
+                  <video src={src} autoPlay loop muted playsInline className="w-full h-full object-cover" style={style} />
+                </div>
+                <svg
+                  className="absolute pointer-events-none"
+                  style={{ top: '50%', left: '50%', transform: 'translate(-50%, -50%)', width: '180%', height: '180%' }}
+                  viewBox="0 0 160 160"
+                  overflow="visible"
+                >
+                  <defs>
+                    <path id={`arc-${label}`} d="M 22,80 A 58,58 0 1,1 138,80" />
+                  </defs>
+                  <text fontSize="10" fontWeight="600" letterSpacing="2.5" fill="#3D2B1A" fontFamily="var(--font-display)" transform="rotate(-20, 80, 80)">
+                    <textPath href={`#arc-${label}`} startOffset="50%" textAnchor="middle">
+                      {label}
+                    </textPath>
+                  </text>
+                </svg>
+              </div>
+            ))}
+          </div>
+
           {/* Bio */}
           <div className="grid md:grid-cols-[200px_1fr] gap-8 md:gap-16 items-start mb-16">
             <div className="space-y-3">
