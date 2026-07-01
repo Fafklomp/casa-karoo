@@ -22,7 +22,7 @@ const placeholderProjects = [
   {
     id: 99,
     name: 'Tented Camp',
-    subtitle: '',
+    subtitle: 'Vacation Home',
     category: 'Hospitality',
     location: 'Puerto Rico',
     year: '2021',
