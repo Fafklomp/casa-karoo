@@ -215,6 +215,9 @@ export default function ProjectModal({ project, onClose }) {
           {project.id === 2 && (
             <p className="text-[10px] font-light text-stone/35 italic mb-3">(disclaimer: the design of this project is copyright and remains the property of Luxury Frontiers).</p>
           )}
+          {project.id === 99 && (
+            <p className="text-[10px] font-light text-stone/35 italic mb-3">(disclaimer: this work was produced when working at Luxury Frontiers).</p>
+          )}
 
           <div className="relative pt-6 border-t border-stone/10 mb-0">
             <div className="grid grid-cols-3 gap-4">
@@ -234,20 +237,8 @@ export default function ProjectModal({ project, onClose }) {
             )}
           </div>
 
-          {project.software && (
-            <div className="py-6 border-b border-stone/10 mb-8">
-              <p className="text-xs tracking-widest uppercase text-stone/40 mb-3">Software</p>
-              <div className="flex flex-wrap gap-2">
-                {project.software.map(s => (
-                  <span key={s} className="text-[10px] md:text-xs tracking-wide lowercase text-sage border border-sage/30 px-2 py-0.5 md:px-3 md:py-1 rounded-sm">
-                    {s}
-                  </span>
-                ))}
-              </div>
-            </div>
-          )}
 
-          <p className="text-[10px] md:text-xs leading-relaxed text-stone/80 mb-8 border border-[#C4A882] rounded-sm px-3 py-2">
+          <p className="text-[10px] md:text-xs leading-relaxed text-stone/80 mb-8">
             {project.id === 1 ? (
               <>A luxury spa and wellness center on a private island in the Seychelles, designed in collaboration with Silvio Rech & Lesley Carstens, blending tropical materiality with calm, resort-style interiors across treatment rooms, relaxation areas, a gym, changerooms, thermal suite, and a retail and arrival space.</>
             ) : project.description}
