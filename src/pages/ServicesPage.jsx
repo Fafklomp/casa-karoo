@@ -96,7 +96,7 @@ function ServiceAccordion() {
       title: 'Design Consultation',
       description: (
         <>
-          A focused session to get to know each other, understand your <PH>vision</PH>, define your project's <PH>goals</PH>, <PH>limitations and opportunities</PH>. Together, we will explore the potential design direction, colour palette, and furniture layout.
+          A focused session to get to know each other, understand your vision, define your project's goals, limitations and opportunities. Together, we will explore the potential design direction, colour palette, and furniture layout.
         </>
       ),
     },
@@ -104,19 +104,32 @@ function ServiceAccordion() {
       id: 'package',
       title: 'Design Package',
       description: (
-        <ul className="space-y-2 text-xs md:text-sm font-light leading-relaxed text-stone/70 list-none">
-          {[
-            <>X3 <PH>schematic design</PH> concepts, each exploring a different layout and design direction for your space.</>,
-            <>X3 curated <PH>look-and-feel</PH> (FF&E) boards, illustrating the furniture, finishes, lighting, and styling.</>,
-            <>A cohesive <PH>colour and material palette</PH>.</>,
-            <><PH>Construction drawings</PH>, including plans, elevations, and custom joinery details where required to communicate the design intent.</>,
-            <>Curated furniture, lighting, and décor selections.</>,
-            <>A comprehensive <PH>FF&E schedule</PH> with product specifications and shopping links.</>,
-            <>Artwork, styling, and finishing-touch recommendations.</>,
-          ].map((item, i) => (
-            <li key={i} className="flex gap-2"><span className="shrink-0 text-sage">•</span><span>{item}</span></li>
-          ))}
-        </ul>
+        <div className="space-y-5 text-xs md:text-sm font-light leading-relaxed text-stone/70">
+          <div>
+            <p className="text-xs tracking-[0.15em] uppercase text-sage font-semibold mb-1">Phase 01 — Schematic Design</p>
+            <p>Multiple concept directions, each exploring a distinct layout and design approach for your space so you can see the possibilities before committing to a direction.</p>
+          </div>
+          <div>
+            <p className="text-xs tracking-[0.15em] uppercase text-sage font-semibold mb-2">Phase 02 — Materials &amp; Fixtures</p>
+            <ul className="space-y-1 list-none">
+              {[
+                <>Curated FF&amp;E boards bringing furniture, finishes, lighting, and styling to life</>,
+                <>A cohesive colour and material palette tailored to your space</>,
+                <>A comprehensive FF&amp;E schedule with full product specifications and shopping links</>,
+              ].map((item, i) => (
+                <li key={i} className="flex gap-2"><span className="shrink-0 text-sage">•</span><span>{item}</span></li>
+              ))}
+            </ul>
+          </div>
+          <div>
+            <p className="text-xs tracking-[0.15em] uppercase text-sage font-semibold mb-1">Phase 03 — Design Development</p>
+            <p>Detailed construction drawings: plans, elevations, and custom joinery details where needed to communicate design intent clearly and set your space up for a smooth build.</p>
+          </div>
+          <div>
+            <p className="text-xs tracking-[0.15em] uppercase text-sage font-semibold mb-1">Bonus</p>
+            <p>Artwork, styling, and finishing-touch recommendations to bring the space fully to life.</p>
+          </div>
+        </div>
       ),
     },
   ]
@@ -246,7 +259,7 @@ export default function ServicesPage() {
               <div className="flex items-center gap-2 mb-3"><FiCamera className="text-[#8A9EBA]" size={16} /><p className="text-xs tracking-[0.2em] uppercase text-sage font-semibold">Better Photos</p></div>
               <div className="border-2 rounded-sm p-4" style={{ borderColor: '#8A9EBA' }}>
                 <p className="text-xs md:text-sm font-light leading-relaxed text-stone/70">
-                  A well-designed, styled space gives photographers something to work with — resulting in images that <PH>stop the scroll</PH> and drive more clicks to your listing.
+                  A well-designed, styled space gives photographers something to work with — resulting in images that stop the scroll and drive more clicks to your listing.
                 </p>
               </div>
               <p className="text-xs font-light text-stone/40 mt-2 italic">
@@ -257,7 +270,7 @@ export default function ServicesPage() {
               <div className="flex items-center gap-2 mb-3"><FiTrendingUp className="text-[#8A9EBA]" size={16} /><p className="text-xs tracking-[0.2em] uppercase text-sage font-semibold">Higher Nightly Rates</p></div>
               <div className="border-2 rounded-sm p-4" style={{ borderColor: '#8A9EBA' }}>
                 <p className="text-xs md:text-sm font-light leading-relaxed text-stone/70">
-                  A well-designed space <PH>commands a premium</PH>. Guests pay more for spaces that feel intentional, comfortable, and distinctive.
+                  A well-designed space commands a premium. Guests pay more for spaces that feel intentional, comfortable, and distinctive.
                 </p>
               </div>
               <p className="text-xs font-light text-stone/40 mt-2 italic">
@@ -268,7 +281,7 @@ export default function ServicesPage() {
               <div className="flex items-center gap-2 mb-3"><FiStar className="text-[#8A9EBA]" size={16} /><p className="text-xs tracking-[0.2em] uppercase text-sage font-semibold">Stronger Reviews</p></div>
               <div className="border-2 rounded-sm p-4" style={{ borderColor: '#8A9EBA' }}>
                 <p className="text-xs md:text-sm font-light leading-relaxed text-stone/70">
-                  Guests notice the details. Thoughtful design leads to <PH>5-star reviews</PH> that compound into more bookings over time.
+                  Guests notice the details. Thoughtful design leads to 5-star reviews that compound into more bookings over time.
                 </p>
               </div>
               <p className="text-xs font-light text-stone/40 mt-2 italic">
@@ -279,7 +292,7 @@ export default function ServicesPage() {
               <div className="flex items-center gap-2 mb-3"><FiZap className="text-[#8A9EBA]" size={16} /><p className="text-xs tracking-[0.2em] uppercase text-sage font-semibold">Faster Bookings</p></div>
               <div className="border-2 rounded-sm p-4" style={{ borderColor: '#8A9EBA' }}>
                 <p className="text-xs md:text-sm font-light leading-relaxed text-stone/70">
-                  A listing that <PH>stands out in search</PH> gets booked faster, reducing vacancy and maximising your return.
+                  A listing that stands out in search gets booked faster, reducing vacancy and maximising your return.
                 </p>
               </div>
               <p className="text-xs font-light text-stone/40 mt-2 italic">
