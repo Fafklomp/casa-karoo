@@ -206,25 +206,22 @@ export default function ProjectModal({ project, onClose }) {
             {project.name}
           </h3>
           {project.subtitle && (
-            <p className="text-sm font-light text-stone/50 mb-1">{project.subtitle}</p>
+            <p className={`text-sm font-light text-stone/50 ${project.id === 99 ? 'mb-4' : 'mb-1'}`}>{project.subtitle}</p>
           )}
-          <p className="text-sm text-stone/50 mb-3">{project.location}</p>
+          {project.id !== 99 && <p className="text-sm text-stone/50 mb-3">{project.location}</p>}
           {project.id === 1 && (
             <p className="text-[10px] font-light text-stone/35 italic mb-3">(disclaimer: the design of this project is copyright and remains the property of Silvio Rech & Lesley Carstens).</p>
           )}
           {project.id === 2 && (
             <p className="text-[10px] font-light text-stone/35 italic mb-3">(disclaimer: the design of this project is copyright and remains the property of Luxury Frontiers).</p>
           )}
-          {project.id === 99 && (
-            <p className="text-[10px] font-light text-stone/35 italic mb-3">(disclaimer: this work was produced when working at Luxury Frontiers).</p>
-          )}
 
           <div className="relative pt-6 border-t border-stone/10 mb-0">
             <div className="grid grid-cols-3 gap-4">
               {[
-                { label: 'Year', value: project.year },
-                ...(project.id !== 2 ? [{ label: 'Area', value: project.area }] : []),
-                { label: 'Role', value: project.role },
+                ...(project.id !== 99 && project.id !== 1 ? [{ label: 'Year', value: project.year }] : []),
+                ...(project.id !== 2 && project.id !== 1 ? [{ label: 'Area', value: project.area }] : []),
+                ...(project.id !== 1 ? [{ label: 'Role', value: project.role }] : []),
               ].filter(({ value }) => value).map(({ label, value }) => (
                 <div key={label}>
                   <p className="text-xs tracking-widest uppercase text-stone/40 mb-1">{label}</p>
@@ -232,6 +229,46 @@ export default function ProjectModal({ project, onClose }) {
                 </div>
               ))}
             </div>
+            {project.id === 1 && (
+              <div className="space-y-2">
+                <div className="flex items-center gap-3">
+                  <p className="text-xs tracking-widest uppercase text-stone/40">Year</p>
+                  <p className="text-sm text-stone">{project.year}</p>
+                </div>
+                <div className="flex items-center gap-3">
+                  <p className="text-xs tracking-widest uppercase text-stone/40">Location</p>
+                  <p className="text-sm text-stone">{project.location}</p>
+                </div>
+                <div className="flex items-center gap-3">
+                  <p className="text-xs tracking-widest uppercase text-stone/40">Area</p>
+                  <p className="text-sm text-stone">{project.area}</p>
+                </div>
+                <div className="flex items-center gap-3">
+                  <p className="text-xs tracking-widest uppercase text-stone/40">Role</p>
+                  <p className="text-sm text-stone">{project.role}</p>
+                </div>
+                <div className="flex items-center gap-3 pb-6 border-b border-stone/10">
+                  <p className="text-xs tracking-widest uppercase text-stone/40">Company</p>
+                  <p className="text-sm text-stone">Silvio Rech & Lesley Carstens</p>
+                </div>
+              </div>
+            )}
+            {project.id === 99 && (
+              <div className="space-y-2">
+                <div className="flex items-center gap-3">
+                  <p className="text-xs tracking-widest uppercase text-stone/40">Year</p>
+                  <p className="text-sm text-stone">{project.year}</p>
+                </div>
+                <div className="flex items-center gap-3">
+                  <p className="text-xs tracking-widest uppercase text-stone/40">Location</p>
+                  <p className="text-sm text-stone">{project.location}</p>
+                </div>
+                <div className="flex items-center gap-3 pb-6 border-b border-stone/10">
+                  <p className="text-xs tracking-widest uppercase text-stone/40">Company</p>
+                  <p className="text-sm text-stone">Luxury Frontiers</p>
+                </div>
+              </div>
+            )}
             {project.id === 2 && (
               <img src="/projects/jungle-resort/hummingbird.webp" alt="Hummingbird" className="absolute top-0 right-0 h-40 w-auto object-contain pointer-events-none hidden md:block" />
             )}
