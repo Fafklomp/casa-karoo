@@ -14,7 +14,7 @@ const placeholderProjects = [
     area: '',
     role: '',
     image: '',
-    description: '',
+    description: 'House Euphorbia is a thoughtful outdoor transformation designed to bring new life to the home\'s garden and entertainment spaces. The project focuses on three key interventions: reimagining the pool area into a more inviting retreat, creating a dedicated outdoor dining space for effortless entertaining, and introducing a firepit nestled within the garden to encourage gathering long after the sun sets.\n\nInspired by the relaxed beauty of outdoor living, the design strengthens the connection between the home and its landscape. Natural materials, layered planting, and warm textures create spaces that feel both refined and welcoming. Offering moments to swim, dine, and unwind in every season.',
     tags: [],
     software: [],
     myRole: '',
