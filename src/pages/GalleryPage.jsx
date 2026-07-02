@@ -7,7 +7,7 @@ const placeholderProjects = [
   {
     id: 99,
     name: 'House Euphorbia',
-    subtitle: 'Home',
+    subtitle: '',
     category: 'Residence',
     location: 'Ballito, South Africa',
     year: '2026',
