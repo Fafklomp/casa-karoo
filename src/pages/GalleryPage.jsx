@@ -7,7 +7,7 @@ const placeholderProjects = [
   {
     id: 99,
     name: 'House Euphorbia',
-    subtitle: 'Vacation Home',
+    subtitle: 'Home',
     category: 'Hospitality',
     location: 'Puerto Rico',
     year: '2021',
