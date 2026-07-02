@@ -106,8 +106,10 @@ function ServiceAccordion() {
       description: (
         <div className="space-y-5 text-xs md:text-sm font-light leading-relaxed text-stone/70">
           <div>
-            <p className="text-xs tracking-[0.15em] uppercase text-sage font-semibold mb-1">Phase 01 — Schematic Design</p>
-            <p>Multiple concept directions, each exploring a distinct layout and design approach for your space so you can see the possibilities before committing to a direction.</p>
+            <p className="text-xs tracking-[0.15em] uppercase text-sage font-semibold mb-2">Phase 01 — Schematic Design</p>
+            <ul className="space-y-1 list-none">
+              <li className="flex gap-2"><span className="shrink-0 text-sage">•</span><span>Multiple concept directions, each exploring a distinct layout and design approach for your space so you can see the possibilities before committing to a direction.</span></li>
+            </ul>
           </div>
           <div>
             <p className="text-xs tracking-[0.15em] uppercase text-sage font-semibold mb-2">Phase 02 — Materials &amp; Fixtures</p>
@@ -122,12 +124,17 @@ function ServiceAccordion() {
             </ul>
           </div>
           <div>
-            <p className="text-xs tracking-[0.15em] uppercase text-sage font-semibold mb-1">Phase 03 — Design Development</p>
-            <p>Detailed construction drawings: plans, elevations, and custom joinery details where needed to communicate design intent clearly and set your space up for a smooth build.</p>
+            <p className="text-xs tracking-[0.15em] uppercase text-sage font-semibold mb-2">Phase 03 — Design Development</p>
+            <ul className="space-y-1 list-none">
+              <li className="flex gap-2"><span className="shrink-0 text-sage">•</span><span>Detailed construction drawings: plans, elevations, and custom joinery details where needed to communicate design intent clearly and set your space up for a smooth build.</span></li>
+            </ul>
           </div>
           <div>
-            <p className="text-xs tracking-[0.15em] uppercase text-sage font-semibold mb-1">Bonus</p>
-            <p>Artwork, styling, and finishing-touch recommendations to bring the space fully to life.</p>
+            <p className="text-xs tracking-[0.15em] uppercase text-sage font-semibold mb-1">Extras</p>
+            <ul className="space-y-1 list-none">
+              <li className="flex gap-2"><span className="shrink-0 text-sage">•</span><span>Coloured renderings bringing your space to life.</span></li>
+              <li className="flex gap-2"><span className="shrink-0 text-sage">•</span><span>Artwork, styling, and finishing-touch recommendations to bring the space fully to life.</span></li>
+            </ul>
           </div>
         </div>
       ),
