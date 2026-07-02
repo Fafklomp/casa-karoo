@@ -297,7 +297,7 @@ export default function ProjectModal({ project, onClose }) {
 
           {project.id === 99 && (
             <div className="mb-8">
-              <p className="text-xs tracking-wide lowercase font-light italic mb-1" style={{ color: '#C4A882' }}>Concept Sketches</p>
+              <p className="text-xs tracking-wide font-bold mb-1 text-blue-600">Concept Sketches</p>
               <p className="text-xs font-light text-stone/40 italic mb-4">prior to Phase 01</p>
             </div>
           )}
