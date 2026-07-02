@@ -206,7 +206,7 @@ export default function ProjectModal({ project, onClose }) {
             {project.name}
           </h3>
           {project.subtitle && (
-            <p className={`text-sm font-light text-stone/50 ${project.id === 99 ? 'mb-4' : 'mb-1'}`}>{project.subtitle}</p>
+            <p className={`text-sm font-light text-stone/50 ${project.id === 99 || project.id === 98 ? 'mb-4' : 'mb-1'}`}>{project.subtitle}</p>
           )}
           {project.id !== 99 && project.id !== 98 && <p className="text-sm text-stone/50 mb-3">{project.location}</p>}
           {project.id === 1 && (
