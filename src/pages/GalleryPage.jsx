@@ -83,7 +83,7 @@ export default function GalleryPage() {
           >
             Our Work
           </h1>
-          <p className="text-xs tracking-[0.2em] uppercase text-sage font-semibold mt-4">in progress:</p>
+          <p className="mt-3 text-xl md:text-2xl font-light text-stone/60" style={{ fontFamily: 'var(--font-display)', fontStyle: 'italic' }}>in progress:</p>
         </div>
 
         <AnimatePresence mode="wait">
