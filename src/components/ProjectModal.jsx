@@ -299,7 +299,7 @@ export default function ProjectModal({ project, onClose }) {
                 <Img src="/projects/tented-camp/moodboard.png" alt="Tented Camp moodboard" className="w-full h-auto" />
               </div>
               <div className="flex flex-col gap-2">
-                {[1,2,3,4,5,6].map(n => (
+                {[1,2,4,5,6].map(n => (
                   <div key={n} className={n === 1 ? 'rounded-sm' : 'bg-white rounded-sm p-2'}>
                     <Img src={`/projects/tented-camp/${n}.png`} alt={`Tented Camp image ${n}`} className="w-full h-auto" />
                   </div>
