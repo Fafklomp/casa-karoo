@@ -10,7 +10,7 @@ const placeholderProjects = [
     subtitle: 'Home',
     category: 'Residence',
     location: 'Ballito, South Africa',
-    year: '2021',
+    year: '2026',
     area: '',
     role: '',
     image: '',
