@@ -6,7 +6,7 @@ import ProjectModal from '../components/ProjectModal'
 const placeholderProjects = [
   {
     id: 99,
-    name: 'Tented Camp',
+    name: 'Camp Unit',
     subtitle: 'Vacation Home',
     category: 'Hospitality',
     location: 'Puerto Rico',
@@ -21,7 +21,7 @@ const placeholderProjects = [
   },
   {
     id: 98,
-    name: 'Tented Camp',
+    name: 'Camp Unit',
     subtitle: 'Vacation Home',
     category: 'Hospitality',
     location: 'Puerto Rico',
