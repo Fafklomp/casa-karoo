@@ -73,7 +73,7 @@ function ProjectCard({ project, onClick }) {
           {project.subtitle && (
             <p className="text-sm font-light text-stone/50 mb-1">{project.subtitle}</p>
           )}
-          <p className="text-xs tracking-wide text-stone/40">{project.location}</p>
+          {project.id !== 98 && <p className="text-xs tracking-wide text-stone/40">{project.location}</p>}
         </div>
         <div className="text-right shrink-0">
           <p className="text-xs tracking-widest uppercase text-stone/35">{project.category}</p>
