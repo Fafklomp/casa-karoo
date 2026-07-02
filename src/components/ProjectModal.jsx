@@ -308,7 +308,10 @@ export default function ProjectModal({ project, onClose }) {
               </div>
               <div className="grid grid-cols-2 gap-2 mt-2">
                 <Img src="/projects/house-euphorbia/05.png" alt="House Euphorbia concept 3" className="w-full h-auto rounded-sm" />
-                <Img src="/projects/house-euphorbia/07.png" alt="House Euphorbia concept 4" className="w-full h-auto rounded-sm" />
+                <div>
+                  <Img src="/projects/house-euphorbia/07.png" alt="House Euphorbia concept 4" className="w-full h-auto rounded-sm" />
+                  <p className="text-xs font-light italic mt-1 text-right" style={{ color: '#8A9EBA' }}>Bar</p>
+                </div>
               </div>
             </div>
           )}
