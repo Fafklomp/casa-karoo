@@ -302,7 +302,7 @@ export default function ProjectModal({ project, onClose }) {
               <div className="grid grid-cols-2 gap-2">
                 <div>
                   <Img src="/projects/house-euphorbia/03.png" alt="House Euphorbia concept 1" className="w-full h-auto rounded-sm" />
-                  <p className="text-[9px] font-light text-stone/35 italic mt-1 text-right">Pool Area</p>
+                  <p className="text-xs font-light italic mt-1 text-right" style={{ color: '#8A9EBA' }}>Pool Area</p>
                 </div>
                 <Img src="/projects/house-euphorbia/04.png" alt="House Euphorbia concept 2" className="w-full h-auto rounded-sm" />
               </div>
