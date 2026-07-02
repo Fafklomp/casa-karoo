@@ -219,7 +219,7 @@ export default function ProjectModal({ project, onClose }) {
           <div className="relative pt-6 border-t border-stone/10 mb-0">
             <div className="grid grid-cols-3 gap-4">
               {[
-                ...(project.id !== 99 && project.id !== 1 ? [{ label: 'Year', value: project.year }] : []),
+                ...(project.id !== 99 && project.id !== 98 && project.id !== 1 ? [{ label: 'Year', value: project.year }] : []),
                 ...(project.id !== 2 && project.id !== 1 ? [{ label: 'Area', value: project.area }] : []),
                 ...(project.id !== 1 ? [{ label: 'Role', value: project.role }] : []),
               ].filter(({ value }) => value).map(({ label, value }) => (
@@ -268,6 +268,7 @@ export default function ProjectModal({ project, onClose }) {
             {project.id === 98 && (
               <div className="space-y-2">
                 <div className="flex items-center gap-3">
+                  <p className="text-xs tracking-widest uppercase text-stone/40">Year</p>
                   <p className="text-sm text-stone">2021</p>
                 </div>
                 <div className="flex items-center gap-3">
