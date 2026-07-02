@@ -287,7 +287,7 @@ export default function ProjectModal({ project, onClose }) {
           </div>
 
 
-          <div className="text-[10px] md:text-xs leading-relaxed text-stone/80 mb-8">
+          <div className="text-[10px] md:text-xs leading-relaxed text-stone/80 mb-8 mt-6">
             {project.id === 1 ? (
               <p>A luxury spa and wellness center on a private island in the Seychelles, designed in collaboration with Silvio Rech & Lesley Carstens, blending tropical materiality with calm, resort-style interiors across treatment rooms, relaxation areas, a gym, changerooms, thermal suite, and a retail and arrival space.</p>
             ) : project.description?.split('\n\n').map((para, i) => (
