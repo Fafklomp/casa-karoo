@@ -21,7 +21,7 @@ const placeholderProjects = [
   },
   {
     id: 98,
-    name: 'Camp Unit',
+    name: 'Tented Camp',
     subtitle: 'Accommodation Unit',
     category: 'Hospitality',
     location: 'Puerto Rico',
