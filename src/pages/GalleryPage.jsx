@@ -22,7 +22,7 @@ const placeholderProjects = [
   {
     id: 98,
     name: 'Camp Unit',
-    subtitle: 'Vacation Home',
+    subtitle: 'Accommodation Unit',
     category: 'Hospitality',
     location: 'Puerto Rico',
     year: '2021',
