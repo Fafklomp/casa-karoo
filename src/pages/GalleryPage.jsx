@@ -83,6 +83,7 @@ export default function GalleryPage() {
           >
             Our Work
           </h1>
+          <p className="text-xs tracking-[0.2em] uppercase text-sage font-semibold mt-4">in progress:</p>
         </div>
 
         <AnimatePresence mode="wait">
