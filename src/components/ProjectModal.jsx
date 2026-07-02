@@ -315,7 +315,10 @@ export default function ProjectModal({ project, onClose }) {
               </div>
               <div className="grid grid-cols-2 gap-2 mt-2">
                 <Img src="/projects/house-euphorbia/01.png" alt="House Euphorbia firepit sketch" className="w-full h-auto rounded-sm" />
-                <Img src="/projects/house-euphorbia/02.png" alt="House Euphorbia firepit" className="w-full h-auto rounded-sm" />
+                <div>
+                  <Img src="/projects/house-euphorbia/02.png" alt="House Euphorbia firepit" className="w-full h-auto rounded-sm" />
+                  <p className="text-xs font-light italic mt-1 text-right" style={{ color: '#8A9EBA' }}>Fireplace</p>
+                </div>
               </div>
             </div>
           )}
