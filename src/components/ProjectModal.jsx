@@ -295,6 +295,12 @@ export default function ProjectModal({ project, onClose }) {
             ))}
           </div>
 
+          {project.id === 99 && (
+            <div className="mb-8">
+              <p className="text-xs tracking-wide lowercase font-light italic mb-4" style={{ color: '#C4A882' }}>Concept Sketches</p>
+            </div>
+          )}
+
           {project.id === 98 && (
             <div className="mb-8">
               <div className="rounded-sm mb-2">
