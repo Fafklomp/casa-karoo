@@ -300,11 +300,11 @@ export default function ProjectModal({ project, onClose }) {
               <p className="text-xs tracking-wide font-bold mb-1" style={{ color: '#8A9EBA' }}>Concept Sketches</p>
               <p className="text-xs font-light text-stone/40 italic mb-4">Prior to Phase 01</p>
               <div className="grid grid-cols-2 gap-2">
+                <Img src="/projects/house-euphorbia/03.png" alt="House Euphorbia concept 1" className="w-full h-auto rounded-sm" />
                 <div>
-                  <Img src="/projects/house-euphorbia/03.png" alt="House Euphorbia concept 1" className="w-full h-auto rounded-sm" />
+                  <Img src="/projects/house-euphorbia/04.png" alt="House Euphorbia concept 2" className="w-full h-auto rounded-sm" />
                   <p className="text-xs font-light italic mt-1 text-right" style={{ color: '#8A9EBA' }}>Pool Area</p>
                 </div>
-                <Img src="/projects/house-euphorbia/04.png" alt="House Euphorbia concept 2" className="w-full h-auto rounded-sm" />
               </div>
             </div>
           )}
