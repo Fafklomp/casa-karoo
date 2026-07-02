@@ -271,10 +271,6 @@ export default function ProjectModal({ project, onClose }) {
                   <p className="text-xs tracking-widest uppercase text-stone/40">Year</p>
                   <p className="text-sm text-stone">2021</p>
                 </div>
-                <div className="flex items-center gap-3">
-                  <p className="text-xs tracking-widest uppercase text-stone/40">Location</p>
-                  <p className="text-sm text-stone">{project.location}</p>
-                </div>
                 <div className="flex items-center gap-3 pb-6 border-b border-stone/10">
                   <p className="text-xs tracking-widest uppercase text-stone/40">Company</p>
                   <p className="text-sm text-stone">Luxury Frontiers</p>
