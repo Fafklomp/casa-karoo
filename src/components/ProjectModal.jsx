@@ -208,7 +208,7 @@ export default function ProjectModal({ project, onClose }) {
           {project.subtitle && (
             <p className={`text-sm font-light text-stone/50 ${project.id === 99 ? 'mb-4' : 'mb-1'}`}>{project.subtitle}</p>
           )}
-          {project.id !== 99 && <p className="text-sm text-stone/50 mb-3">{project.location}</p>}
+          {project.id !== 99 && project.id !== 98 && <p className="text-sm text-stone/50 mb-3">{project.location}</p>}
           {project.id === 1 && (
             <p className="text-[10px] font-light text-stone/35 italic mb-3">(disclaimer: the design of this project is copyright and remains the property of Silvio Rech & Lesley Carstens).</p>
           )}
@@ -270,6 +270,10 @@ export default function ProjectModal({ project, onClose }) {
                 <div className="flex items-center gap-3">
                   <p className="text-xs tracking-widest uppercase text-stone/40">Year</p>
                   <p className="text-sm text-stone">2021</p>
+                </div>
+                <div className="flex items-center gap-3">
+                  <p className="text-xs tracking-widest uppercase text-stone/40">Location</p>
+                  <p className="text-sm text-stone">{project.location}</p>
                 </div>
                 <div className="flex items-center gap-3 pb-6 border-b border-stone/10">
                   <p className="text-xs tracking-widest uppercase text-stone/40">Company</p>
