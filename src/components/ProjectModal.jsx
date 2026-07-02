@@ -128,8 +128,8 @@ export default function ProjectModal({ project, onClose }) {
   const [enlargedImg, setEnlargedImg] = useState(null)
   const touchStartX = useRef(null)
 
-  function openEnlarged(src, gallery = null, index = 0) {
-    setEnlargedImg({ src, gallery, index })
+  function openEnlarged(src, gallery = null, index = 0, bgWhite = false) {
+    setEnlargedImg({ src, gallery, index, bgWhite })
   }
 
   function navigateEnlarged(dir) {
@@ -154,12 +154,12 @@ export default function ProjectModal({ project, onClose }) {
     return () => { document.body.style.overflow = '' }
   }, [])
 
-  const Img = ({ src, alt, className, gallery = null, galleryIndex = 0 }) => (
+  const Img = ({ src, alt, className, gallery = null, galleryIndex = 0, bgWhite = false }) => (
     <img
       src={src}
       alt={alt}
       className={`${className} cursor-zoom-in`}
-      onClick={() => openEnlarged(src, gallery, galleryIndex)}
+      onClick={() => openEnlarged(src, gallery, galleryIndex, bgWhite)}
     />
   )
 
@@ -301,7 +301,7 @@ export default function ProjectModal({ project, onClose }) {
               <div className="flex flex-col gap-2">
                 {[1,2,4].map(n => (
                   <div key={n} className={n === 1 ? 'rounded-sm' : 'bg-white rounded-sm p-2'}>
-                    <Img src={`/projects/tented-camp/${n}.png`} alt={`Tented Camp image ${n}`} className="w-full h-auto" />
+                    <Img src={`/projects/tented-camp/${n}.png`} alt={`Tented Camp image ${n}`} className="w-full h-auto" bgWhite={n !== 1} />
                   </div>
                 ))}
               </div>
@@ -626,7 +626,7 @@ export default function ProjectModal({ project, onClose }) {
             initial={{ opacity: 0 }}
             animate={{ opacity: 1 }}
             exit={{ opacity: 0 }}
-            className="fixed inset-0 z-[60] flex items-center justify-center bg-black/90 p-4"
+            className={`fixed inset-0 z-[60] flex items-center justify-center p-4 ${enlargedImg.bgWhite ? 'bg-white' : 'bg-black/90'}`}
             onClick={() => setEnlargedImg(null)}
             onTouchStart={(e) => { touchStartX.current = e.touches[0].clientX }}
             onTouchEnd={(e) => {
