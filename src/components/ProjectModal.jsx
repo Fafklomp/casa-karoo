@@ -268,6 +268,10 @@ export default function ProjectModal({ project, onClose }) {
             {project.id === 98 && (
               <div className="space-y-2">
                 <div className="flex items-center gap-3">
+                  <p className="text-xs tracking-widest uppercase text-stone/40">Year</p>
+                  <p className="text-sm text-stone">2021</p>
+                </div>
+                <div className="flex items-center gap-3">
                   <p className="text-xs tracking-widest uppercase text-stone/40">Location</p>
                   <p className="text-sm text-stone">{project.location}</p>
                 </div>
