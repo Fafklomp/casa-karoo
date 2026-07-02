@@ -293,9 +293,21 @@ export default function ProjectModal({ project, onClose }) {
             ) : project.description}
           </p>
 
+          {project.id === 98 && (
+            <div className="mb-8">
+              <div className="grid grid-cols-2 gap-2">
+                {[1,2,3,4,5,6].map(n => (
+                  <div key={n} className="bg-white rounded-sm p-2">
+                    <Img src={`/projects/tented-camp/${n}.png`} alt={`Tented Camp image ${n}`} className="w-full h-auto" />
+                  </div>
+                ))}
+              </div>
+            </div>
+          )}
+
           {project.id === 2 && (
             <div className="mb-8">
-              <p className="text-xs tracking-widest uppercase text-stone/40 mb-4 flex items-center gap-2">
+              <p className="text-xs tracking-widests uppercase text-stone/40 mb-4 flex items-center gap-2">
                 <span className="inline-block w-2 h-2 rounded-full bg-gold shrink-0" />
                 <span className="text-stone/25 mr-1">01</span>Resort Main Area
               </p>
