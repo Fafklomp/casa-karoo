@@ -19,21 +19,6 @@ const placeholderProjects = [
     software: [],
     myRole: '',
   },
-  {
-    id: 98,
-    name: 'Tented Camp',
-    subtitle: 'Accommodation Unit',
-    category: 'Hospitality',
-    location: 'Puerto Rico',
-    year: '2021',
-    area: '',
-    role: '',
-    image: '',
-    description: '',
-    tags: [],
-    software: [],
-    myRole: '',
-  },
 ]
 
 const gridVariants = {
