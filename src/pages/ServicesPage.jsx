@@ -133,7 +133,7 @@ function ServiceAccordion() {
             <p className="text-xs tracking-[0.15em] uppercase text-sage font-semibold mb-1">Extras</p>
             <ul className="space-y-1 list-none">
               <li className="flex gap-2"><span className="shrink-0 text-sage">•</span><span>Coloured renderings bringing your space to life.</span></li>
-              <li className="flex gap-2"><span className="shrink-0 text-sage">•</span><span>Artwork, styling, and finishing-touch recommendations to bring the space fully to life.</span></li>
+              <li className="flex gap-2"><span className="shrink-0 text-sage">•</span><span>Artwork, styling, and finishing-touch recommendations.</span></li>
             </ul>
           </div>
         </div>
@@ -266,7 +266,7 @@ export default function ServicesPage() {
               <div className="flex items-center gap-2 mb-3"><FiCamera className="text-[#8A9EBA]" size={16} /><p className="text-xs tracking-[0.2em] uppercase text-sage font-semibold">Better Photos</p></div>
               <div className="border-2 rounded-sm p-4" style={{ borderColor: '#8A9EBA' }}>
                 <p className="text-xs md:text-sm font-light leading-relaxed text-stone/70">
-                  A well-designed, styled space gives photographers something to work with — resulting in images that stop the scroll and drive more clicks to your listing.
+                  A well-designed, styled space gives photographers something to work with, resulting in images that stop the scroll and drive more clicks to your listing.
                 </p>
               </div>
               <p className="text-xs font-light text-stone/40 mt-2 italic">

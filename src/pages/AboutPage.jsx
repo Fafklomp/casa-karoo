@@ -70,21 +70,6 @@ export default function AboutPage() {
             </div>
           </div>
 
-          {/* Our Mission */}
-          <div className="grid md:grid-cols-[200px_1fr] gap-8 md:gap-16 items-start border-t border-stone/10 pt-12 mb-16">
-            <div className="space-y-3">
-              <p className="text-xs tracking-[0.2em] uppercase text-sage font-semibold pt-1">Our Mission</p>
-              <div className="w-full aspect-[5/4] md:aspect-auto overflow-hidden rounded-sm">
-                <img src="" alt="Our Mission" className="w-full h-full object-cover" />
-              </div>
-            </div>
-            <div className="space-y-4">
-              <p className="text-sm font-light leading-relaxed text-stone/80">
-                Interior design & furnishing packages built for rental hosts who want better photos, stronger reviews & higher nightly rates.
-              </p>
-            </div>
-          </div>
-
           {/* Founder */}
           <div className="grid md:grid-cols-[200px_1fr] gap-8 md:gap-16 items-start border-t border-stone/10 pt-12 mb-16">
             <div className="space-y-3">
