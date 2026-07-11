@@ -29,15 +29,15 @@ export default function HeroPage() {
         </div>
 
         {/* Hero */}
-        <section className="flex flex-col justify-center px-6 md:px-16 pt-10 pb-10 max-w-5xl mx-auto">
+        <section className="flex flex-col items-center justify-center px-6 md:px-16 pt-10 pb-10 max-w-5xl mx-auto text-center">
           <div className="max-w-3xl">
             <p className="text-xs tracking-[0.2em] uppercase text-sage font-semibold mb-4">
               Interior Design for Short-Term Rentals
             </p>
             <p className="text-sm font-light leading-relaxed text-stone/70 mb-10">
-              Interior design & furnishing packages built for rental hosts who want better photos, stronger reviews & higher nightly rates.
+              Interior design & furnishing packages built for rental hosts who want<br />better photos, stronger reviews & higher nightly rates.
             </p>
-            <div className="flex flex-col gap-4 w-fit">
+            <div className="flex flex-row gap-4 flex-wrap justify-center">
               <Link
                 to="/services"
                 className="text-xs tracking-widest uppercase bg-stone text-offwhite px-8 py-3 rounded-full hover:bg-stone/80 transition-colors duration-200"
