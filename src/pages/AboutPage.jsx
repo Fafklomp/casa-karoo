@@ -42,7 +42,7 @@ export default function AboutPage() {
                   <defs>
                     <path id={`arc-${label}`} d="M 22,80 A 58,58 0 1,1 138,80" />
                   </defs>
-                  <text fontSize="10" fontWeight="600" letterSpacing="2.5" fill="#3D2B1A" fontFamily="var(--font-display)" transform="rotate(-20, 80, 80)">
+                  <text fontSize="13" fontWeight="600" letterSpacing="2.5" fill="#3D2B1A" fontFamily="var(--font-display)" transform="rotate(-20, 80, 80)">
                     <textPath href={`#arc-${label}`} startOffset="50%" textAnchor="middle">
                       {label}
                     </textPath>
