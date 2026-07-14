@@ -236,7 +236,7 @@ export default function ServicesPage() {
                   >
                     {title}
                   </h3>
-                  <p className="text-xs md:text-sm font-light leading-relaxed text-stone/70">
+                  <p className="text-xs md:text-sm font-light leading-relaxed text-stone/70 text-justify">
                     {description}
                   </p>
                 </div>
@@ -265,7 +265,7 @@ export default function ServicesPage() {
             <div className="pb-4">
               <div className="flex items-center gap-2 mb-3"><FiCamera className="text-[#8A9EBA]" size={16} /><p className="text-xs tracking-[0.2em] uppercase text-sage font-semibold">Better Photos</p></div>
               <div className="border-2 rounded-sm p-4" style={{ borderColor: '#8A9EBA' }}>
-                <p className="text-xs md:text-sm font-light leading-relaxed text-stone/70">
+                <p className="text-xs md:text-sm font-light leading-relaxed text-stone/70 text-justify">
                   A well-designed, styled space gives photographers something to work with, resulting in images that stop the scroll and drive more clicks to your listing.
                 </p>
               </div>
@@ -276,7 +276,7 @@ export default function ServicesPage() {
             <div className="pb-4">
               <div className="flex items-center gap-2 mb-3"><FiTrendingUp className="text-[#8A9EBA]" size={16} /><p className="text-xs tracking-[0.2em] uppercase text-sage font-semibold">Higher Nightly Rates</p></div>
               <div className="border-2 rounded-sm p-4" style={{ borderColor: '#8A9EBA' }}>
-                <p className="text-xs md:text-sm font-light leading-relaxed text-stone/70">
+                <p className="text-xs md:text-sm font-light leading-relaxed text-stone/70 text-justify">
                   A well-designed space commands a premium. Guests pay more for spaces that feel intentional, comfortable, and distinctive.
                 </p>
               </div>
@@ -287,7 +287,7 @@ export default function ServicesPage() {
             <div className="pb-4">
               <div className="flex items-center gap-2 mb-3"><FiStar className="text-[#8A9EBA]" size={16} /><p className="text-xs tracking-[0.2em] uppercase text-sage font-semibold">Stronger Reviews</p></div>
               <div className="border-2 rounded-sm p-4" style={{ borderColor: '#8A9EBA' }}>
-                <p className="text-xs md:text-sm font-light leading-relaxed text-stone/70">
+                <p className="text-xs md:text-sm font-light leading-relaxed text-stone/70 text-justify">
                   Guests notice the details. Thoughtful design leads to 5-star reviews that compound into more bookings over time.
                 </p>
               </div>
@@ -298,7 +298,7 @@ export default function ServicesPage() {
             <div className="pb-4">
               <div className="flex items-center gap-2 mb-3"><FiZap className="text-[#8A9EBA]" size={16} /><p className="text-xs tracking-[0.2em] uppercase text-sage font-semibold">Faster Bookings</p></div>
               <div className="border-2 rounded-sm p-4" style={{ borderColor: '#8A9EBA' }}>
-                <p className="text-xs md:text-sm font-light leading-relaxed text-stone/70">
+                <p className="text-xs md:text-sm font-light leading-relaxed text-stone/70 text-justify">
                   A listing that stands out in search gets booked faster, reducing vacancy and maximising your return.
                 </p>
               </div>
