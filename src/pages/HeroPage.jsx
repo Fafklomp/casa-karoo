@@ -34,7 +34,7 @@ export default function HeroPage() {
             <p className="text-xs tracking-[0.2em] uppercase text-sage font-semibold mb-4">
               Interior Design<br className="sm:hidden" /> for Short-Term Rentals
             </p>
-            <p className="text-sm font-light leading-relaxed text-stone/70 mb-10">
+            <p className="text-sm font-light leading-relaxed text-stone/70 mb-10 text-left">
               Interior design & furnishing packages built for rental hosts who want<br className="hidden sm:block" /> better photos, stronger reviews & higher nightly rates.
             </p>
             <div className="flex flex-row gap-4 flex-wrap justify-center">
