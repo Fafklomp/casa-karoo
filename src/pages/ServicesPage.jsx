@@ -104,7 +104,7 @@ function ServiceAccordion() {
       id: 'package',
       title: 'Design Package',
       description: (
-        <div className="space-y-5 text-xs md:text-sm font-light leading-relaxed text-stone/70">
+        <div className="space-y-5 text-xs md:text-sm font-light leading-relaxed text-stone/70 text-justify">
           <div>
             <p className="text-xs tracking-[0.15em] uppercase text-sage font-semibold mb-2">Phase 01 — Schematic Design</p>
             <ul className="space-y-1 list-none">
@@ -148,7 +148,7 @@ function ServiceAccordion() {
         return (
           <button
             key={id}
-            className="relative border-2 rounded-sm p-8 pt-10 overflow-hidden text-left w-full group"
+            className="relative border-2 rounded-sm p-5 pt-6 overflow-hidden text-left w-full group"
             style={{ borderColor: '#8A9EBA' }}
             onClick={() => setOpen(isOpen ? null : id)}
           >
@@ -164,7 +164,7 @@ function ServiceAccordion() {
               </span>
             </div>
             {isOpen && (
-              <p className="text-xs md:text-sm font-light leading-relaxed text-stone/70 mt-4">
+              <p className="text-xs md:text-sm font-light leading-relaxed text-stone/70 mt-4 text-justify">
                 {description}
               </p>
             )}

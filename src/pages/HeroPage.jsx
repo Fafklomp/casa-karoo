@@ -40,13 +40,13 @@ export default function HeroPage() {
             <div className="flex flex-row gap-4 flex-wrap justify-center">
               <Link
                 to="/services"
-                className="text-xs tracking-widest uppercase bg-stone text-offwhite px-8 py-3 rounded-full hover:bg-stone/80 transition-colors duration-200"
+                className="text-xs tracking-widest lowercase bg-stone text-offwhite px-8 py-3 rounded-full hover:bg-stone/80 transition-colors duration-200"
               >
                 View Services
               </Link>
               <Link
                 to="/contact"
-                className="text-xs tracking-widest uppercase text-terra border border-terra/60 px-8 py-3 rounded-full hover:bg-terra hover:border-terra hover:text-offwhite transition-all duration-200"
+                className="text-xs tracking-widest lowercase text-terra border border-terra/60 px-8 py-3 rounded-full hover:bg-terra hover:border-terra hover:text-offwhite transition-all duration-200"
               >
                 Get in Touch
               </Link>
