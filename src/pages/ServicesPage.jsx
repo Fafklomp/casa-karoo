@@ -179,9 +179,9 @@ export default function ServicesPage() {
   return (
     <PageTransition>
       <FadeIn>
-        <section className="px-6 md:px-16 pt-32 pb-24 max-w-5xl mx-auto">
+        <section className="px-6 md:px-16 pt-20 pb-16 max-w-5xl mx-auto">
           {/* Header */}
-          <div className="mb-16">
+          <div className="mb-10">
             <p className="text-xs tracking-[0.2em] uppercase text-sage font-semibold mb-4">What We Offer</p>
             <h1
               className="text-2xl md:text-4xl font-light leading-tight"
@@ -195,7 +195,7 @@ export default function ServicesPage() {
           <ServiceAccordion />
 
           {/* Custom note */}
-          <p className="mt-12 text-sm font-light text-stone/60">
+          <p className="mt-8 text-sm font-light text-stone/60">
             Custom packages available —{' '}
             <Link to="/contact" className="text-terra hover:text-terra/70 transition-colors duration-200 underline underline-offset-4">
               contact us
@@ -204,8 +204,8 @@ export default function ServicesPage() {
           </p>
 
           {/* How It Works */}
-          <div className="border-t border-stone/10 mt-24" />
-          <div className="mt-16 mb-16">
+          <div className="border-t border-stone/10 mt-16" />
+          <div className="mt-10 mb-10">
             <p className="text-xs tracking-[0.2em] uppercase text-sage font-semibold mb-4">The Process</p>
             <h2
               className="text-2xl md:text-4xl font-light leading-tight"
@@ -245,8 +245,8 @@ export default function ServicesPage() {
           </div>
 
           {/* Why It Works */}
-          <div className="border-t border-stone/10 mt-24" />
-          <div className="mt-16 mb-16">
+          <div className="border-t border-stone/10 mt-16" />
+          <div className="mt-10 mb-10">
             <p className="text-xs tracking-[0.2em] uppercase text-sage font-semibold mb-4">The Case for Design</p>
             <h2
               className="text-2xl md:text-4xl font-light leading-tight max-w-2xl"
@@ -261,7 +261,7 @@ export default function ServicesPage() {
             </p>
           </div>
 
-          <div className="grid md:grid-cols-2 gap-8 mb-16">
+          <div className="grid md:grid-cols-2 gap-8 mb-10">
             <div className="pb-4">
               <div className="flex items-center gap-2 mb-3"><FiCamera className="text-[#8A9EBA]" size={16} /><p className="text-xs tracking-[0.2em] uppercase text-sage font-semibold">Better Photos</p></div>
               <div className="border-2 rounded-sm p-4" style={{ borderColor: '#8A9EBA' }}>
@@ -308,7 +308,7 @@ export default function ServicesPage() {
             </div>
           </div>
 
-          <div className="border-t border-stone/10 pt-12">
+          <div className="border-t border-stone/10 pt-8">
             <p className="text-sm md:text-sm font-light leading-relaxed max-w-2xl" style={{ color: '#8A9EBA' }}>
               Most hosts underinvest in their space and overspend on promotions. We flip that equation.
             </p>
