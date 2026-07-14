@@ -57,12 +57,20 @@ export default function AboutPage() {
             ))}
           </div>
 
+          {/* Guest Room Tagline */}
+          <div className="grid md:grid-cols-[200px_1fr] gap-8 md:gap-16 items-start mb-16">
+            <p className="text-xs tracking-[0.2em] uppercase font-semibold pt-1" style={{ color: '#8A9EBA' }}>The Guest Room</p>
+            <p className="text-xs md:text-sm font-light leading-relaxed text-justify italic" style={{ color: '#8A9EBA' }}>
+              "A space designed with the same care and intention as a home, where every detail is considered to welcome, comfort, and connect."
+            </p>
+          </div>
+
           {/* Who We Are */}
           <div className="grid md:grid-cols-[200px_1fr] gap-8 md:gap-16 items-start mb-16">
             <div className="space-y-3">
               <p className="text-xs tracking-[0.2em] uppercase text-sage font-semibold pt-1">Who We Are</p>
-              <div className="w-full aspect-[5/4] md:aspect-auto overflow-hidden rounded-sm">
-                <img src="/who-we-are.jpg" alt="Rooidam Farm Stall, Karoo" className="w-full h-full md:h-auto object-cover object-center md:object-contain" />
+              <div className="w-full aspect-[5/4] md:aspect-[3/4] overflow-hidden rounded-sm">
+                <img src="/who-we-are.jpg" alt="Rooidam Farm Stall, Karoo" className="w-full h-full object-cover object-center" />
               </div>
             </div>
             <div className="space-y-4">
