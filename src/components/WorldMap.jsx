@@ -66,7 +66,7 @@ export default function WorldMap() {
         <p className="text-xs tracking-[0.2em] uppercase text-sage font-semibold mb-2">
           your worldwide casa
         </p>
-        <p className="text-sm font-light text-stone/70 mb-6 text-center pr-24">
+        <p className="text-sm font-light text-stone/70 mb-6 text-left md:text-center md:pr-24">
           Let's collab on how we can make your listing stand out.
         </p>
       </div>
