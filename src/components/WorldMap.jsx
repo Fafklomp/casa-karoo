@@ -61,7 +61,7 @@ const BADGES = [
 
 export default function WorldMap() {
   return (
-    <div className="w-full px-6 md:px-16 pt-2 pb-12 max-w-5xl mx-auto flex flex-col items-center">
+    <div className="w-full px-6 md:px-16 pt-2 pb-4 max-w-5xl mx-auto flex flex-col items-center">
       <div className="max-w-3xl w-full text-center">
         <p className="text-xs tracking-[0.2em] uppercase text-sage font-semibold mb-2">
           your worldwide casa

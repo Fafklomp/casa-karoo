@@ -2,6 +2,7 @@ import { Link } from 'react-router-dom'
 import PageTransition from '../components/PageTransition'
 import FadeIn from '../components/FadeIn'
 import WorldMap from '../components/WorldMap'
+import ImageBannerScroll from '../components/ImageBannerScroll'
 
 const stats = [
   { value: '5★', label: 'Reviews' },
@@ -57,6 +58,14 @@ export default function HeroPage() {
 
         {/* World map */}
         <WorldMap />
+
+        {/* Image banner */}
+        <div className="px-6 md:px-16 max-w-5xl mx-auto mb-2 text-center">
+          <p className="text-xs tracking-[0.2em] uppercase font-semibold mb-1" style={{ color: '#8A9EBA' }}>A visual diary of guest spaces encountered through travel.</p>
+          <p className="text-xs md:text-sm font-light italic" style={{ color: '#8A9EBA' }}>Experiencing, learning, and gathering inspiration from places around the world.</p>
+          <p className="text-xs md:text-sm font-light italic" style={{ color: '#8A9EBA' }}>Bringing those lessons back to thoughtfully elevate your space.</p>
+        </div>
+        <ImageBannerScroll />
 
         {/* Stats row */}
         <div className="flex flex-wrap gap-8 px-6 md:px-16 pb-16 max-w-5xl mx-auto border-t border-stone/10 pt-10">
