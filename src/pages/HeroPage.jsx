@@ -60,8 +60,8 @@ export default function HeroPage() {
         <WorldMap />
 
         {/* Image banner */}
-        <div className="px-6 md:px-16 max-w-5xl mx-auto mb-4 text-left md:text-center">
-          <p className="text-xs tracking-[0.2em] uppercase font-semibold mb-1" style={{ color: '#8A9EBA' }}>A visual diary of guest spaces encountered through travel.</p>
+        <div className="px-6 md:px-16 max-w-5xl mx-auto pt-10 pb-8 text-left md:text-center">
+          <p className="text-xs tracking-[0.2em] uppercase font-semibold mb-4" style={{ color: '#8A9EBA' }}>A visual diary of guest spaces encountered through travel.</p>
           <p className="text-xs md:text-sm font-light italic" style={{ color: '#8A9EBA' }}>Experiencing, learning, and gathering inspiration from places around the world.</p>
           <p className="text-xs md:text-sm font-light italic" style={{ color: '#8A9EBA' }}>Bringing those lessons back to thoughtfully elevate your space.</p>
         </div>
