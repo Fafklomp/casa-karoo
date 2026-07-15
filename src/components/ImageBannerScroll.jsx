@@ -26,9 +26,8 @@ export default function ImageBannerScroll() {
   return (
     <div className="w-full overflow-hidden py-4">
       <div
-        className="flex gap-4"
+        className="banner-strip flex gap-4"
         style={{
-          animation: 'scroll-banner 50s linear infinite',
           width: 'max-content',
         }}
       >
@@ -42,6 +41,14 @@ export default function ImageBannerScroll() {
         @keyframes scroll-banner {
           0% { transform: translateX(0); }
           100% { transform: translateX(-50%); }
+        }
+        .banner-strip {
+          animation: scroll-banner 38s linear infinite;
+        }
+        @media (min-width: 768px) {
+          .banner-strip {
+            animation-duration: 50s;
+          }
         }
       `}</style>
     </div>
