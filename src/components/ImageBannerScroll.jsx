@@ -24,7 +24,7 @@ export default function ImageBannerScroll() {
   const doubled = [...images, ...images]
 
   return (
-    <div className="w-full overflow-hidden py-3">
+    <div className="w-full overflow-hidden py-4">
       <div
         className="flex gap-4"
         style={{

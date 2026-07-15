@@ -75,16 +75,16 @@ export default function AboutPage() {
             </div>
             <div className="space-y-4">
               <p className="text-xs md:text-sm font-light leading-relaxed text-stone/80 text-justify">
-                Casa Karoo is an interior design studio crafting soulful, personalised spaces. Our focus is on short-term rentals, where we bring the concept of a "guest room" to life, welcoming visitors into a space that feels like home.
+                Casa Karoo is an interior design studio creating soulful, personalised spaces for short-term rentals, hospitality, and residential interiors. We bring the feeling of a thoughtfully designed guest room to life. Spaces that welcome people in and make them feel at home.
               </p>
               <p className="text-xs md:text-sm font-light leading-relaxed text-stone/80 text-justify">
-                Rooted in human-centred design and placemaking, we create interiors that respond not only to the people who inhabit them, but also to the character and context of the place they belong to.
+                Rooted in human-centred design and placemaking, we create interiors that respond to both the people who use them and the places they belong to.
               </p>
               <p className="text-xs md:text-sm font-light leading-relaxed text-stone/80 text-justify">
-                We believe great design is about more than aesthetics. Through thoughtful consideration of layout, light, flow, and materiality, we create spaces that feel intuitive, grounded, and welcoming. Spaces that support rest, connection, and a genuine sense of wellbeing.
+                We believe great design is felt as much as it is seen. Through careful consideration of layout, light, flow, colour and materiality, we create spaces that feel intuitive, grounded, and connected. Designed for rest, connection, and everyday living.
               </p>
               <p className="text-xs md:text-sm font-light leading-relaxed text-stone/80 text-justify">
-                Every Casa Karoo project is designed to be beautiful, enduring, and deeply lived in. Spaces that photograph beautifully, function effortlessly, and make people feel at home, whether they're staying for a weekend or a lifetime.
+                Every Casa Karoo project is crafted to be beautiful, functional, and enduring. Spaces that photograph beautifully, live effortlessly, and leave a lasting impression.
               </p>
             </div>
           </div>
@@ -99,13 +99,19 @@ export default function AboutPage() {
             </div>
             <div className="space-y-4">
               <p className="text-xs md:text-sm font-light leading-relaxed text-stone/80 text-justify">
-                Casa Karoo was born from a love of travel, thoughtful spaces, and the quiet beauty of the South African Karoo. Inspired by its vast landscapes, earthy palette, and sense of stillness, we create interiors that feel calm, intentional, and deeply connected to place.
+                Casa Karoo was born from a love of travel, thoughtful spaces, and the landscapes that shape how we experience place.
               </p>
               <p className="text-xs md:text-sm font-light leading-relaxed text-stone/80 text-justify">
-                Travel taught us that the spaces we remember most are rarely the grandest, but the ones with character. The guest room that feels like it was waiting for you, the home that reflects its surroundings, the details that make a stranger feel welcome. The difference between somewhere to stay and somewhere to belong.
+                The name reflects the heart of our brand: "Casa," meaning home, and "Karoo," a vast region of South Africa known for its raw beauty, quiet landscapes, and timeless character. Together, Casa Karoo represents the idea of creating homes away from home. Spaces that welcome, restore, and feel deeply connected to their surroundings.
               </p>
               <p className="text-xs md:text-sm font-light leading-relaxed text-stone/80 text-justify">
-                We believe every space tells a story, balancing beauty with function and carrying a distinct sense of place. From short-term rentals to hospitality and residential interiors, we create environments that feel considered, personal, and lived in. Spaces where people feel at home, wherever they are.
+                Inspired by the Karoo's earthy palette, natural textures, open skies, and sense of stillness, we create interiors that feel grounded, intentional, and full of character.
+              </p>
+              <p className="text-xs md:text-sm font-light leading-relaxed text-stone/80 text-justify">
+                Through travel, we discovered that the spaces we remember most are not always the grandest, but the ones that make us feel something. The guest room that feels thoughtfully prepared, the home that reflects its surroundings, and the details that transform a stay into an experience.
+              </p>
+              <p className="text-xs md:text-sm font-light leading-relaxed text-stone/80 text-justify">
+                Casa Karoo exists to create spaces with a story. Interiors that balance beauty and function, celebrate their context, and allow people to feel a sense of belonging wherever they are.
               </p>
             </div>
           </div>
@@ -124,16 +130,19 @@ export default function AboutPage() {
                 Hi, I'm Jules!
               </p>
               <p className="text-xs md:text-sm font-light leading-relaxed text-stone/80 text-justify">
-                Born in sunny South Africa, where I graduated from the University of Pretoria with an Honours degree in Interior Architecture. I've since been taken around the world by a love of adventure, design, discovering new places, and meeting people from all walks of life. Over the past few years, I've worked across luxury residential and hospitality projects in South Africa and abroad, gaining experience in everything from bespoke homes to guest-focused environments.
+                Born in sunny South Africa, in the coastal town of Ballito, I grew up with a love for the outdoors, travel, and the way spaces and places can make us feel. This curiosity led me to pursue Interior Architecture, graduating with an Honours degree from the University of Pretoria.
               </p>
               <p className="text-xs md:text-sm font-light leading-relaxed text-stone/80 text-justify">
-                My work is shaped by a belief that design should support the way people live, move, gather, and unwind. I'm drawn to spaces that feel effortless yet intentional. Where layout, light, colour, materiality, and detail come together to create environments with warmth, personality, and a genuine sense of ease.
+                My passion for design, adventure, and discovering new places has taken me around the world, shaping the way I see and experience spaces. Through my work, I have gained experience designing luxury residential and hospitality interiors, creating spaces that are thoughtful, welcoming, and connected to the people who experience them.
               </p>
               <p className="text-xs md:text-sm font-light leading-relaxed text-stone/80 text-justify">
-                With experience spanning both design and construction, I approach each project with equal attention to beauty and practicality, creating spaces that are enduring, functional, and deeply personal to the people who use them.
+                My approach is shaped by a belief that interiors should support the way people live, move, gather, and rest. I'm drawn to spaces that feel effortless yet intentional. Where thoughtful planning, materials, colour, and detail come together to create warmth and personality.
               </p>
               <p className="text-xs md:text-sm font-light leading-relaxed text-stone/80 text-justify">
-                At Casa Karoo, every project is an opportunity to create something thoughtful, timeless, and full of character.
+                With experience across both design and construction, I bring a balance of creativity and practicality to every project, creating spaces that are timeless, functional, and deeply personal.
+              </p>
+              <p className="text-xs md:text-sm font-light leading-relaxed text-stone/80 text-justify">
+                At Casa Karoo, every project is an opportunity to create something meaningful. A space with character, purpose, and a story to tell.
               </p>
             </div>
           </div>
