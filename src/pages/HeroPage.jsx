@@ -62,7 +62,7 @@ export default function HeroPage() {
         {/* Image banner */}
         <div className="px-6 md:px-16 max-w-5xl mx-auto pt-10 pb-8 text-left md:text-center">
           <p className="text-xs tracking-[0.2em] uppercase text-sage font-semibold mb-2 text-center">A visual diary of guest spaces encountered through travel</p>
-          <p className="text-sm font-light text-stone/70">Experiencing, learning, and gathering inspiration from places around the world. Bringing those lessons back to thoughtfully elevate your space.</p>
+          <p className="text-sm font-light text-stone/70">Experiencing, learning, and gathering inspiration from places around the world.<br className="hidden md:block" /> Bringing those lessons back to thoughtfully elevate your space.</p>
         </div>
         <ImageBannerScroll />
 
